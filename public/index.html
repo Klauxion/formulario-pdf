@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha de Inscrição - Val do Rio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <div>
+        <h1>Ficha de Inscrição</h1>
+        <p>Escola Profissional Val do Rio</p>
+    </div>
+
+    <img src="vr_logo_2026.png" alt="Logótipo Val do Rio">
+</header>
+
+<form id="formulario">
+
+    <div class="card">
+        <h2>Dados do Aluno</h2>
+
+        <div class="grid">
+            <input name="Primeiro Nome" placeholder="Primeiro Nome" required>
+            <input name="Último Nome" placeholder="Último Nome" required>
+            <input name="Email" placeholder="Email">
+            <input name="Data de Nascimento" placeholder="Data de Nascimento">
+            <input name="NIF" placeholder="NIF">
+            <input name="Acompanhante" placeholder="Acompanhante">
+            <input name="Nacionalidade" placeholder="Nacionalidade">
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Identidade</h2>
+
+        <div class="grid">
+            <select name= "Tipo de Documento" required>
+            <option value="">-- Tipo de Documento --</option>
+            <option>BI</option>
+            <option>CC</option>
+            <option>Passaporte</option>
+            <option>Título de Residência</option>
+            <option>Outro</option>
+        </select>
+            <input name="BI-CC" placeholder="BI-CC" required>
+            <input name="Data de validade do Documento" placeholder="Data de validade do Documento">
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Morada</h2>
+
+        <div class="grid">
+            <input name="Rua" placeholder="Rua">
+            <input name="Cidade" placeholder="Cidade">
+            <input name="Concelho" placeholder="Concelho">
+            <input name="Freguesia" placeholder="Freguesia">
+            <input name="Código Postal" placeholder="Código Postal">
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Escolaridade</h2>
+
+
+        <input name="Escola Anterior" placeholder="Escola Anterior">
+        <select name="Último Ano de Frequência" required>
+            <option value="">-- Último Ano de Frequência --</option>
+            <option>6º Ano</option>
+            <option>7º Ano</option>
+            <option>8º Ano</option>
+            <option>9º Ano</option>
+            <option>10º Ano</option>
+            <option>11º Ano</option>
+            <option>12º Ano</option>
+        </select>
+        <select name="Curso Pretendido" required>
+            <option value="">-- Curso Pretendido --</option>
+            
+    <option value="Tecnico de Acao Educativa">Técnico de Ação Educativa</option>
+    <option value="Tecnico de Desenho Digital 3D">Técnico de Desenho Digital 3D</option>
+    <option value="Tecnico de Eletronica e Telecomunicacoes">Técnico de Eletrónica e Telecomunicações</option>
+    <option value="Tecnico de Apoio Psicossocial">Técnico de Apoio Psicossocial</option>
+    <option value="Tecnico de Video">Técnico de Vídeo</option>
+    <option value="Tecnico de Design e Comunicacao Grafica">Técnico de Design e Comunicação Gráfica</option>
+    <option value="Tecnico de Multimedia">Técnico de Multimédia</option>
+    <option value="Tecnico de Auxiliar de Saude">Técnico de Auxiliar de Saúde</option>
+    <option value="Tecnico de Gestao Equipamentos Informaticos">Técnico de Gestão de Equipamentos Informáticos</option>
+    <option value="Tecnico Assistente Dentario">Técnico Assistente Dentário</option>
+    <option value="Tecnico Auxiliar de Farmacia">Técnico Auxiliar de Farmácia</option>
+
+    <option value="Workshop para Novos Alunos">Workshop para Novos Alunos</option>
+
+    <option value="x Dispositivos moveis e gestao Cloud">x Dispositivos móveis e gestão Cloud</option>
+    <option value="x Informatica - Nocoes Basicas">x Informática - Noções Básicas</option>
+    <option value="x Criacao de Sites Web - UFCD0768">x Criação de Sites Web - UFCD0768</option>
+    <option value="x Processamento de Texto - UFCD0755">x Processamento de Texto - UFCD0755</option>
+    <option value="x Folhas de Calculo - UFCD0778">x Folhas de Cálculo - UFCD0778</option>
+    <option value="x IT Essentials - CISCO">x IT Essentials - CISCO</option>
+    <option value="x Projecto e Instalacao ITED - Actualizacao">x Projecto e Instalação ITED – Actualização</option>
+    <option value="x Instalador de ITED">x Instalador de ITED</option>
+
+    <option value="Tecnico de Informatica e Sistemas">Técnico de Informática e Sistemas</option>
+    <option value="Tecnico de Audiovisuais">Técnico de Audiovisuais</option>
+    <option value="Tecnico de Eletronica e Comunicacoes">Técnico de Eletrónica e Comunicações</option>
+    <option value="Tecnico de Sistemas de Computacao e Redes">Técnico de Sistemas de Computação e Redes</option>
+    <option value="Tecnico de Desenvolvimento de Software">Técnico de Desenvolvimento de Software</option>
+
+        </select>
+        
+    </div>
+
+    <div class="card">
+        <h2>Afiliação/Dados do Encarregado de Educação</h2>
+
+        <div class="grid">
+            <input name="Telemóvel do Pai" placeholder="Telemóvel do Pai">
+            <input name="Telemóvel da Mãe" placeholder="Telemóvel da Mãe">
+            <input name="Email do Pai" placeholder="Email do Pai">
+            <input name="Email da Mãe" placeholder="Email da Mãe">
+            <input name="Nome do Encarregado" placeholder="Nome do Encarregado">
+            <input name="Telemóvel do Encarregado" placeholder="Telemóvel do Encarregado">
+            <input name="Email do Encarregado" placeholder="Email do Encarregado">
+            <input name="Telefone do Encarregado" placeholder="Telefone do Encarregado">
+            <input name="Morada do Encarregado" placeholder="Morada do Encarregado">
+            <input name="Localidade do Encarregado" placeholder="Localidade do encarregado">
+            <input name="Código Postal do Encarregado" placeholder="Código Postal do Encarregado">
+            <input name="Habilitações do Encarregado" placeholder="Habilitações do Encarregado">
+             <select name="Relação do Candidato" required>
+            <option value="">-- Relação do Candidato --</option>
+            <option>Pai</option>
+            <option>Mãe</option>
+            <option>Tio</option>
+            <option>Avô</option>
+            <option>Padrinho</option>
+            <option>Irmão</option>
+            <option>Tutor</option>
+            <option>Outro</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="grid">
+            
+<label>
+    <input type="checkbox" name="autoriza_dados" value="Sim">
+    Autorizo o tratamento dos meus dados pessoais
+</label>
+
+        </div>
+    </div>
+
+    <button type="submit">Submeter e Gerar PDF</button>
+
+</form>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
