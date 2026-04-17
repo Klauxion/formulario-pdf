@@ -75,6 +75,27 @@ class FormPDF extends FPDF
             ($h - $y3) * $this->k
         ));
     }
+
+    protected string $footerImagePath = '';
+
+    public function setFooterImagePath(string $path): void
+    {
+        $this->footerImagePath = $path;
+    }
+
+    public function Footer(): void
+    {
+        if ($this->footerImagePath !== '' && is_file($this->footerImagePath)) {
+            $pageWidth = $this->GetPageWidth();
+            $pageHeight = $this->GetPageHeight();
+            $bottomMargin = 8;
+            $imageWidth = 150;
+            $imageHeight = 12;
+            $x = ($pageWidth - $imageWidth) / 2;
+            $y = $pageHeight - $imageHeight - $bottomMargin;
+            $this->Image($this->footerImagePath, $x, $y, $imageWidth, $imageHeight);
+        }
+    }
 }
 
 function toPdfText(string $value): string
@@ -166,105 +187,203 @@ function normalizeClientIp(?string $ip): string
 
 function drawSectionTitle(FormPDF $pdf, string $title): void
 {
-    $pdf->SetFillColor(76, 175, 80);
-    $pdf->SetTextColor(255, 255, 255);
-    $pdf->SetFont('Arial', 'B', 12);
-    $startX = 10.0;
-    $startY = $pdf->GetY();
-    $width = 190.0;
-    $height = 8.0;
-    $pdf->RoundedRect($startX, $startY, $width, $height, 1.0, 'F');
-    $pdf->SetXY($startX + 3, $startY + 1);
-    $pdf->Cell($width - 6, 6, toPdfText($title), 0, 1, 'L');
-    $pdf->SetTextColor(0, 0, 0);
-    $pdf->Ln(3);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->SetFont('Arial', 'B', 11);
+    $pdf->Cell(0, 6, toPdfText($title), 0, 1, 'L');
+    $pdf->Ln(2);
 }
 
-function drawFields(FormPDF $pdf, array $formData, array $fieldLabels): void
+function drawField(FormPDF $pdf, string $label, string $value, float $width): void
 {
-    $pdf->SetFont('Arial', '', 10);
+    $x = $pdf->GetX();
+    $y = $pdf->GetY();
 
-    $lineHeight = 6;
-    $colGap = 4;
-    $leftX = 10;
-    $colW = 93;
-    $rightX = $leftX + $colW + $colGap;
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->Cell($width, 4, toPdfText($label), 0, 1);
 
-    for ($i = 0; $i < count($fieldLabels); $i += 2) {
-        if ($pdf->GetY() > 270) {
-            $pdf->AddPage();
-        }
+    $pdf->SetFillColor(227, 238, 255);
+    $pdf->Rect($x, $pdf->GetY(), $width, 10, 'F');
 
-        $leftLabel = $fieldLabels[$i];
-        $rightLabel = $fieldLabels[$i + 1] ?? null;
-        $rowTopY = $pdf->GetY();
+    $pdf->SetXY($x + 2, $pdf->GetY() + 2);
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 0, 0);
+    $pdf->Cell($width - 4, 5, toPdfText($value), 0, 1);
+    $pdf->SetXY($x, $y + 15);
+}
 
-        $pdf->SetFillColor(245, 246, 248);
-        $pdf->RoundedRect($leftX, $rowTopY, $colW, 12.5, 0.8, 'FD');
-        $pdf->SetFont('Arial', 'B', 9);
-        $pdf->SetXY($leftX + 2, $rowTopY + 1);
-        $pdf->Cell($colW - 4, $lineHeight, toPdfText((string)$leftLabel), 0, 0);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->SetXY($leftX + 2, $rowTopY + 6.2);
-        $pdf->Cell($colW - 4, $lineHeight, toPdfText(safeValue($formData, (string)$leftLabel)), 0, 0);
+function drawTwoFields(FormPDF $pdf, string $label1, string $value1, string $label2, string $value2, float $width1, float $width2): void
+{
+    $x = $pdf->GetX();
+    $y = $pdf->GetY();
 
-        if ($rightLabel !== null) {
-            $pdf->SetFillColor(245, 246, 248);
-            $pdf->RoundedRect($rightX, $rowTopY, $colW, 12.5, 0.8, 'FD');
-            $pdf->SetFont('Arial', 'B', 9);
-            $pdf->SetXY($rightX + 2, $rowTopY + 1);
-            $pdf->Cell($colW - 4, $lineHeight, toPdfText((string)$rightLabel), 0, 0);
-            $pdf->SetFont('Arial', '', 10);
-            $pdf->SetXY($rightX + 2, $rowTopY + 6.2);
-            $pdf->Cell($colW - 4, $lineHeight, toPdfText(safeValue($formData, (string)$rightLabel)), 0, 0);
-        }
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->Cell($width1, 4, toPdfText($label1), 0, 0);
+    $pdf->Cell($width2, 4, toPdfText($label2), 0, 1);
 
-        $pdf->SetY($rowTopY + 14.8);
-    }
+    $pdf->SetFillColor(227, 238, 255);
+    $pdf->Rect($x, $pdf->GetY(), $width1, 10, 'F');
+    $pdf->Rect($x + $width1, $pdf->GetY(), $width2, 10, 'F');
+
+    $pdf->SetXY($x + 2, $pdf->GetY() + 2);
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 0, 0);
+    $pdf->Cell($width1 - 4, 5, toPdfText($value1), 0, 0);
+    $pdf->SetXY($x + $width1 + 2, $pdf->GetY());
+    $pdf->Cell($width2 - 4, 5, toPdfText($value2), 0, 1);
+    $pdf->SetXY($x, $y + 15);
+}
+
+function drawThreeFields(FormPDF $pdf, string $label1, string $value1, string $label2, string $value2, string $label3, string $value3, float $width1, float $width2, float $width3): void
+{
+    $x = $pdf->GetX();
+    $y = $pdf->GetY();
+
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->Cell($width1, 4, toPdfText($label1), 0, 0);
+    $pdf->Cell($width2, 4, toPdfText($label2), 0, 0);
+    $pdf->Cell($width3, 4, toPdfText($label3), 0, 1);
+
+    $pdf->SetFillColor(227, 238, 255);
+    $pdf->Rect($x, $pdf->GetY(), $width1, 10, 'F');
+    $pdf->Rect($x + $width1, $pdf->GetY(), $width2, 10, 'F');
+    $pdf->Rect($x + $width1 + $width2, $pdf->GetY(), $width3, 10, 'F');
+
+    $pdf->SetXY($x + 2, $pdf->GetY() + 2);
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 0, 0);
+    $pdf->Cell($width1 - 4, 5, toPdfText($value1), 0, 0);
+    $pdf->SetXY($x + $width1 + 2, $pdf->GetY());
+    $pdf->Cell($width2 - 4, 5, toPdfText($value2), 0, 0);
+    $pdf->SetXY($x + $width1 + $width2 + 2, $pdf->GetY());
+    $pdf->Cell($width3 - 4, 5, toPdfText($value3), 0, 1);
+    $pdf->SetXY($x, $y + 15);
 }
 
 function buildPdfFromFormData(array $formData): string|false
 {
     $pdf = new FormPDF();
+    $pdf->SetMargins(16, 18, 16);
+    $pdf->SetAutoPageBreak(true, 35);
+    $pdf->setFooterImagePath(__DIR__ . '/../basePDF_image/ISO_9001_e_IQNET_COR.jpg');
     $pdf->AddPage();
-    $pdf->SetAutoPageBreak(true, 15);
 
-    $pdf->SetFillColor(244, 246, 248);
-    $pdf->Rect(0, 0, 210, 297, 'F');
+    $logoPath = __DIR__ . '/../basePDF_image/vr_logo_2026.png';
+    if (!is_file($logoPath)) {
+        $logoPath = __DIR__ . DIRECTORY_SEPARATOR . 'vr_logo_2026.png';
+    }
 
-    $headerX = 10;
-    $headerY = 10;
-    $headerW = 190;
-    $headerH = 28;
-
-    $pdf->SetFillColor(255, 255, 255);
-    $pdf->RoundedRect($headerX, $headerY, $headerW, $headerH, 1.2, 'FD');
-    $pdf->SetDrawColor(220, 220, 220);
-
-    $logoPath = __DIR__ . DIRECTORY_SEPARATOR . 'vr_logo_2026.png';
     if (is_file($logoPath)) {
-        $logoW = 22;
-        $logoH = 22;
-        $logoX = $headerX + $headerW - $logoW - 4;
-        $logoY = $headerY + ($headerH - $logoH) / 2;
-        $pdf->Image($logoPath, $logoX, $logoY, $logoW, $logoH);
+        $pdf->Image($logoPath, 16, 18, 35);
     }
 
-    $pdf->SetXY(14, 14);
+    $pdf->SetFont('Arial', 'B', 10);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->SetXY(140, 20);
+    $pdf->Cell(0, 5, toPdfText('Ano Letivo'), 0, 1, 'L');
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetXY(140, 25);
+    $pdf->SetFillColor(227, 238, 255);
+    $pdf->Rect(140, 25, 25, 8, 'F');
+    $pdf->Cell(25, 8, toPdfText('2025'), 0, 0, 'C');
+    $pdf->SetXY(171, 25);
+    $pdf->Rect(171, 25, 25, 8, 'F');
+    $pdf->SetXY(171, 25);
+    $pdf->Cell(25, 8, toPdfText('2026'), 0, 0, 'C');
+
+    $pdf->SetXY(140, 37);
+    $pdf->SetFont('Arial', 'B', 10);
+    $pdf->Cell(0, 5, toPdfText('Curso'), 0, 1, 'L');
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetXY(140, 42);
+    $pdf->Rect(140, 42, 68, 8, 'F');
+    $pdf->Cell(68, 8, toPdfText(safeValue($formData, 'Curso Pretendido')), 0, 0, 'C');
+
+    $pdf->SetXY(140, 52);
+    $pdf->SetFont('Arial', 'B', 10);
+    $pdf->Cell(0, 5, toPdfText('Candidatura n.º'), 0, 1, 'L');
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetXY(140, 57);
+    $pdf->Rect(140, 57, 68, 8, 'F');
+    $pdf->Cell(68, 8, toPdfText(safeValue($formData, 'Candidatura n.º')), 0, 0, 'C');
+
+    $pdf->Ln(22);
     $pdf->SetFont('Arial', 'B', 16);
-    $pdf->SetTextColor(0, 0, 0);
-    $pdf->Cell(0, 8, toPdfText('Ficha de Inscricao'), 0, 1);
-    $pdf->SetX(14);
-    $pdf->SetFont('Arial', '', 11);
-    $pdf->SetTextColor(80, 80, 80);
-    $pdf->Cell(0, 6, toPdfText('Escola Profissional Val do Rio'), 0, 1);
-    $pdf->Ln(14);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->Cell(0, 8, toPdfText('Ficha de Candidatura'), 0, 1, 'C');
+    $pdf->Ln(4);
 
-    foreach (PDF_SECTIONS as $sectionTitle => $sectionFields) {
-        drawSectionTitle($pdf, $sectionTitle);
-        drawFields($pdf, $formData, $sectionFields);
-        $pdf->Ln(2);
-    }
+    $pdf->SetFont('Arial', 'B', 11);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->Cell(0, 6, toPdfText('Identificação do Candidato'), 0, 1, 'L');
+    $pdf->Ln(2);
+
+    drawField($pdf, 'Nome', safeValue($formData, 'Primeiro Nome') . ' ' . safeValue($formData, 'Último Nome'), 178.0);
+    drawTwoFields($pdf, 'Nascido em', safeValue($formData, 'Data de Nascimento'), 'Nacionalidade', safeValue($formData, 'Nacionalidade'), 88.0, 88.0);
+    drawTwoFields($pdf, 'Naturalidade(País)', safeValue($formData, 'Nacionalidade'), 'Concelho/Freguesia Nasc.', safeValue($formData, 'Freguesia'), 88.0, 88.0);
+    drawTwoFields($pdf, 'CC|Outro', safeValue($formData, 'BI-CC'), 'Validade', safeValue($formData, 'Data de validade do Documento'), 88.0, 88.0);
+    drawField($pdf, 'NIF', safeValue($formData, 'NIF'), 178.0);
+    drawField($pdf, 'Morada', safeValue($formData, 'Rua'), 178.0);
+    drawTwoFields($pdf, 'Localidade', safeValue($formData, 'Cidade'), 'Código Postal', safeValue($formData, 'Código Postal'), 88.0, 88.0);
+    drawTwoFields($pdf, 'Telefone', safeValue($formData, 'Telemóvel do Pai'), 'Telemóvel', safeValue($formData, 'Telemóvel da Mãe'), 88.0, 88.0);
+    drawTwoFields($pdf, 'Email', safeValue($formData, 'Email'), 'Situação académica', safeValue($formData, 'Último Ano de Frequência'), 88.0, 88.0);
+
+    $pdf->Ln(6);
+    drawSectionTitle($pdf, 'Curriculum escolar e perfil do candidato');
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->Cell(0, 5, toPdfText('Estabelecimentos de ensino que frequentou:'), 0, 1, 'L');
+    $pdf->Ln(2);
+
+    drawField($pdf, '1.º Ciclo do Ensino Básico', safeValue($formData, 'Escola Anterior'), 178.0);
+    drawField($pdf, '2.º Ciclo do Ensino Básico', '-', 178.0);
+    drawField($pdf, '3.º Ciclo do Ensino Básico', '-', 178.0);
+    drawField($pdf, 'Secundário', '-', 178.0);
+
+    $pdf->AddPage();
+    $pdf->SetMargins(16, 18, 16);
+    $pdf->SetFont('Arial', 'B', 11);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->SetY(20);
+    $pdf->Cell(0, 6, toPdfText('Filiação e Encarregado de Educação'), 0, 1, 'L');
+    $pdf->Ln(2);
+
+    drawField($pdf, 'Pai - Nome', safeValue($formData, 'Nome do Encarregado'), 178.0);
+    drawTwoFields($pdf, 'Telemóvel', safeValue($formData, 'Telefone do Encarregado'), 'Email', safeValue($formData, 'Email do Encarregado'), 88.0, 88.0);
+    $pdf->Ln(2);
+    drawField($pdf, 'Mãe - Nome', '-', 178.0);
+    drawTwoFields($pdf, 'Telemóvel', '-', 'Email', '-', 88.0, 88.0);
+    $pdf->Ln(6);
+    $pdf->SetFont('Arial', 'B', 11);
+    $pdf->Cell(0, 6, toPdfText('Encarregado de Educação (De acordo com o despacho 14026/07)'), 0, 1, 'L');
+    $pdf->Ln(2);
+    $pdf->SetFont('Arial', '', 8);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->MultiCell(0, 4, toPdfText('Nos casos do Encarregado de Educação não ser o Pai nem a Mãe, indicar o nome, morada, telefones de contacto e relação que tem com o seu Educando.'), 0, 'L');
+    $pdf->Ln(3);
+
+    drawThreeFields($pdf, 'EE: Nome', safeValue($formData, 'Nome do Encarregado'), 'Morada', safeValue($formData, 'Morada do Encarregado'), 'Localidade', safeValue($formData, 'Localidade do Encarregado'), 58.5, 58.5, 58.5);
+    drawThreeFields($pdf, 'Código Postal', safeValue($formData, 'Código Postal do Encarregado'), 'Telefone', safeValue($formData, 'Telefone do Encarregado'), 'Telemóvel', safeValue($formData, 'Telemóvel do Encarregado'), 58.5, 58.5, 58.5);
+    drawField($pdf, 'Email', safeValue($formData, 'Email do Encarregado'), 178.0);
+    drawTwoFields($pdf, 'Habilitações Académicas', safeValue($formData, 'Habilitações do Encarregado'), 'Relação com o candidato', safeValue($formData, 'Relação do Candidato'), 88.0, 88.0);
+
+    $pdf->Ln(6);
+    $checkboxX = $pdf->GetX();
+    $checkboxY = $pdf->GetY();
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 68, 139);
+    $pdf->MultiCell(120, 4, toPdfText('Sim, aceito tratamento dos meus dados de candidato pela Escola profissional Val do Rio'), 0, 'L');
+    $pdf->SetXY($checkboxX + 125, $checkboxY + 1);
+    $pdf->Rect($checkboxX + 125, $checkboxY + 1, 6, 6, 'D');
+    $pdf->SetFont('Arial', 'B', 12);
+    $pdf->Text($checkboxX + 126, $checkboxY + 6, '✔');
+
+    $pdf->SetFont('Arial', '', 8);
+    $pdf->SetTextColor(120, 120, 120);
+    $pdf->SetY(-30);
+    $pdf->Cell(0, 4, toPdfText('M.D. DPE 14_06'), 0, 1, 'L');
+    $pdf->Cell(0, 4, toPdfText(date('Y-m-d')), 0, 1, 'L');
 
     $pdfContent = $pdf->Output('S');
     return is_string($pdfContent) && $pdfContent !== '' ? $pdfContent : false;

@@ -41,6 +41,11 @@
 
       <div class="grid">
         <div class="field">
+          <label for="candidatura_num">Candidatura n.º</label>
+          <input id="candidatura_num" name="Candidatura n.º">
+        </div>
+
+        <div class="field">
           <label for="primeiro_nome">Primeiro Nome</label>
           <input id="primeiro_nome" name="Primeiro Nome" required>
         </div>
@@ -66,13 +71,18 @@
         </div>
 
         <div class="field">
-          <label for="acompanhante">Acompanhante</label>
-          <input id="acompanhante" name="Acompanhante">
+          <label for="naturalidade">Naturalidade(País)</label>
+          <input id="naturalidade" name="Naturalidade(País)">
         </div>
 
         <div class="field">
           <label for="nacionalidade">Nacionalidade</label>
           <input id="nacionalidade" name="Nacionalidade">
+        </div>
+
+        <div class="field">
+          <label for="concelho_freguesia">Concelho/Freguesia Nasc.</label>
+          <input id="concelho_freguesia" name="Freguesia">
         </div>
       </div>
     </div>
@@ -83,19 +93,7 @@
 
       <div class="grid">
         <div class="field">
-          <label for="tipo_doc">Tipo de Documento</label>
-          <select id="tipo_doc" name="Tipo de Documento" required>
-            <option value="">-- Tipo de Documento --</option>
-            <option>BI</option>
-            <option>CC</option>
-            <option>Passaporte</option>
-            <option>Título de Residência</option>
-            <option>Outro</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="bi_cc">BI-CC</label>
+          <label for="bi_cc">CC|Outro</label>
           <input id="bi_cc" name="BI-CC" required>
         </div>
 
