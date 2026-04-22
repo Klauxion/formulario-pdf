@@ -101,7 +101,7 @@ function normalizeClientIp(?string $ip): string
     return $value;
 }
 
-function writeField(\setasign\Fpdi\Fpdi $pdf, float $x, float $y, array $formData, string $key): void
+function writeField(\setasign\Fpdi\Fpdi $pdf, float $x, float $y, array $formData, string $key, float $boxWidth = 80): void
 {
     // Special handling for compound fields
     $val = '';
@@ -125,8 +125,17 @@ function writeField(\setasign\Fpdi\Fpdi $pdf, float $x, float $y, array $formDat
         return;
     }
 
-    $pdf->SetXY($x, $y);
-    $pdf->Cell(0, 5, toPdfText($val), 0, 0, 'L');
+    // Draw light blue box (no border) around field
+    $boxHeight = 6;
+    $pdf->SetFillColor(200, 220, 255);
+    $pdf->SetDrawColor(200, 220, 255);  // Match fill color to hide border
+    $pdf->SetLineWidth(0);
+    $pdf->Rect($x, $y - 0.5, $boxWidth, $boxHeight, 'FD');
+
+    $pdf->SetXY($x + 2, $y);
+    $pdf->SetFont('Arial', '', 9);
+    $pdf->SetTextColor(0, 0, 0);
+    $pdf->Cell($boxWidth - 4, 5, toPdfText($val), 0, 0, 'L');
 }
 
 function buildPdfFromFormData(array $formData): string|false
@@ -156,29 +165,29 @@ function buildPdfFromFormData(array $formData): string|false
     $pdf->SetFont('Arial', '', 9);
     $pdf->SetTextColor(0, 0, 0);
 
-    writeField($pdf, 170.0, 24.4, $formData, 'Candidatura n.º');
-    writeField($pdf, 118.0, 31.7, $formData, 'Curso Pretendido');
+    writeField($pdf, 170.0, 24.4, $formData, 'Candidatura n.º', 25);
+    writeField($pdf, 118.0, 31.7, $formData, 'Curso Pretendido', 65);
     
-    writeField($pdf, 25.0, 71.3, $formData, 'Nome Completo');
-    writeField($pdf, 34.0, 79.7, $formData, 'Data de Nascimento');
-    writeField($pdf, 122.0, 80.2, $formData, 'Nacionalidade');
-    writeField($pdf, 45.0, 88.2, $formData, 'Nacionalidade'); // Naturalidade(País)
-    writeField($pdf, 140.0, 87.5, $formData, 'Concelho Freguesia');
-    writeField($pdf, 32.0, 95.1, $formData, 'BI-CC');
-    writeField($pdf, 91.0, 95.2, $formData, 'Data de validade do Documento');
-    writeField($pdf, 21.0, 102.7, $formData, 'NIF');
-    writeField($pdf, 28.0, 112.2, $formData, 'Rua');
-    writeField($pdf, 34.0, 122.2, $formData, 'Cidade');
-    writeField($pdf, 107.0, 122.7, $formData, 'Código Postal');
-    writeField($pdf, 31.0, 130.7, $formData, 'Telefone');
-    writeField($pdf, 118.0, 131.3, $formData, 'Telemóvel');
-    writeField($pdf, 26.0, 139.2, $formData, 'Email');
-    writeField($pdf, 126.0, 139.8, $formData, 'Último Ano de Frequência');
+    writeField($pdf, 25.0, 71.3, $formData, 'Nome Completo', 140);
+    writeField($pdf, 34.0, 79.7, $formData, 'Data de Nascimento', 60);
+    writeField($pdf, 122.0, 80.2, $formData, 'Nacionalidade', 70);
+    writeField($pdf, 45.0, 88.2, $formData, 'Nacionalidade', 55);
+    writeField($pdf, 140.0, 87.5, $formData, 'Concelho Freguesia', 50);
+    writeField($pdf, 32.0, 95.1, $formData, 'BI-CC', 45);
+    writeField($pdf, 91.0, 95.2, $formData, 'Data de validade do Documento', 55);
+    writeField($pdf, 21.0, 102.7, $formData, 'NIF', 40);
+    writeField($pdf, 28.0, 112.2, $formData, 'Rua', 140);
+    writeField($pdf, 34.0, 122.2, $formData, 'Cidade', 60);
+    writeField($pdf, 107.0, 122.7, $formData, 'Código Postal', 45);
+    writeField($pdf, 31.0, 130.7, $formData, 'Telefone', 40);
+    writeField($pdf, 118.0, 131.3, $formData, 'Telemóvel', 45);
+    writeField($pdf, 26.0, 139.2, $formData, 'Email', 50);
+    writeField($pdf, 126.0, 139.8, $formData, 'Último Ano de Frequência', 50);
 
-    writeField($pdf, 71.0, 210.6, $formData, 'Escola Anterior');
-    writeField($pdf, 71.0, 219.9, $formData, 'Escola 2º Ciclo');
-    writeField($pdf, 71.0, 229.2, $formData, 'Escola 3º Ciclo');
-    writeField($pdf, 47.0, 238.5, $formData, 'Escola Secundário');
+    writeField($pdf, 120.0, 210.6, $formData, 'Escola Anterior', 90);
+    writeField($pdf, 120.0, 219.9, $formData, 'Escola 2º Ciclo', 90);
+    writeField($pdf, 120.0, 229.2, $formData, 'Escola 3º Ciclo', 90);
+    writeField($pdf, 120.0, 238.5, $formData, 'Escola Secundário', 90);
 
     // ── PAGE 2 ──
     $tpl2 = $pdf->importPage(2);
@@ -188,30 +197,36 @@ function buildPdfFromFormData(array $formData): string|false
     $pdf->SetFont('Arial', '', 9);
     $pdf->SetTextColor(0, 0, 0);
 
-    writeField($pdf, 32.0, 22.1, $formData, 'Nome do Pai');
-    writeField($pdf, 30.0, 31.9, $formData, 'Telemóvel do Pai');
-    writeField($pdf, 125.0, 31.1, $formData, 'Email do Pai');
+    writeField($pdf, 60.0, 22.1, $formData, 'Nome do Pai', 130);
+    writeField($pdf, 30.0, 31.9, $formData, 'Telemóvel do Pai', 65);
+    writeField($pdf, 145.0, 31.1, $formData, 'Email do Pai', 55);
     
-    writeField($pdf, 34.0, 49.4, $formData, 'Nome da Mãe');
-    writeField($pdf, 32.0, 59.4, $formData, 'Telemóvel da Mãe');
-    writeField($pdf, 126.0, 59.0, $formData, 'Email da Mãe');
+    writeField($pdf, 60.0, 49.4, $formData, 'Nome da Mãe', 130);
+    writeField($pdf, 32.0, 59.4, $formData, 'Telemóvel da Mãe', 65);
+    writeField($pdf, 145.0, 59.0, $formData, 'Email da Mãe', 55);
 
-    writeField($pdf, 30.0, 113.3, $formData, 'Nome do Encarregado');
-    writeField($pdf, 28.0, 120.6, $formData, 'Morada do Encarregado');
-    writeField($pdf, 150.0, 120.9, $formData, 'Localidade do Encarregado');
-    writeField($pdf, 37.0, 127.6, $formData, 'Código Postal do Encarregado');
-    writeField($pdf, 29.0, 134.5, $formData, 'Telefone do Encarregado');
-    writeField($pdf, 118.0, 135.4, $formData, 'Telemóvel do Encarregado');
-    writeField($pdf, 24.0, 142.4, $formData, 'Email do Encarregado');
-    writeField($pdf, 54.0, 150.5, $formData, 'Habilitações do Encarregado');
-    writeField($pdf, 54.0, 158.0, $formData, 'Relação do Candidato');
+    writeField($pdf, 30.0, 113.3, $formData, 'Nome do Encarregado', 160);
+    writeField($pdf, 28.0, 120.6, $formData, 'Morada do Encarregado', 100);
+    writeField($pdf, 150.0, 120.9, $formData, 'Localidade do Encarregado', 40);
+    writeField($pdf, 37.0, 127.6, $formData, 'Código Postal do Encarregado', 55);
+    writeField($pdf, 29.0, 134.5, $formData, 'Telefone do Encarregado', 60);
+    writeField($pdf, 118.0, 135.4, $formData, 'Telemóvel do Encarregado', 55);
+    writeField($pdf, 24.0, 142.4, $formData, 'Email do Encarregado', 150);
+    writeField($pdf, 54.0, 150.5, $formData, 'Habilitações do Encarregado', 80);
+    writeField($pdf, 54.0, 158.0, $formData, 'Relação do Candidato', 80);
 
     // Checkbox for data consent
     $autoriza = isset($formData['autoriza_dados']) ? trim((string)$formData['autoriza_dados']) : '';
     if ($autoriza === 'Sim' || $autoriza === '1' || $autoriza === 'true' || $autoriza === 'on' || $autoriza === true) {
-        $pdf->SetFont('Arial', 'B', 12);
-        // The checkmark box is roughly at x=13, y=186.5
-        $pdf->SetXY(13.0, 186.5);
+        // Draw checkbox box on the right side
+        $pdf->SetDrawColor(0, 0, 0);
+        $pdf->SetLineWidth(0.5);
+        $pdf->Rect(188.0, 186.0, 5, 5);  // Box
+        
+        // Draw X inside checkbox
+        $pdf->SetFont('Arial', 'B', 10);
+        $pdf->SetTextColor(0, 0, 0);
+        $pdf->SetXY(188.0, 185.8);
         $pdf->Cell(5, 5, 'X', 0, 0, 'C');
     }
 
