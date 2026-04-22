@@ -2,10 +2,12 @@ param(
     [int]$Port = 8080
 )
 
-$scriptPath = Join-Path $PSScriptRoot "scripts\start.ps1"
-if (!(Test-Path $scriptPath)) {
-    Write-Host "Missing scripts/start.ps1" -ForegroundColor Red
-    exit 1
-}
+Write-Host "Starting PHP development server on http://127.0.0.1:$Port" -ForegroundColor Green
+Write-Host "Press Ctrl+C to stop" -ForegroundColor Yellow
+Write-Host ""
 
-& $scriptPath -Port $Port
+Set-Location $PSScriptRoot
+php -S 127.0.0.1:$Port -t public
+
+Write-Host ""
+Write-Host "Server stopped." -ForegroundColor Yellow

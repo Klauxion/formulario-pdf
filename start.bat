@@ -1,10 +1,14 @@
 @echo off
 setlocal
 
-set SCRIPT=%~dp0scripts\start.bat
-if not exist "%SCRIPT%" (
-  echo Missing scripts\start.bat
-  exit /b 1
-)
+echo.
+echo Starting PHP development server on http://127.0.0.1:8080
+echo Press Ctrl+C to stop
+echo.
 
-call "%SCRIPT%" %*
+cd /d "%~dp0"
+php -S 127.0.0.1:8080 -t public
+
+echo.
+echo Server stopped.
+pause

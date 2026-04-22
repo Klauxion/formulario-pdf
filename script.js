@@ -120,6 +120,30 @@ function fillFormWithSample() {
 
 feedbackOk?.addEventListener("click", hideFeedback);
 
+function updateVersionLabel() {
+  if (!versionLabel) return;
+  const label = currentVersion === "template" ? "(Template)" : "(Generated)";
+  versionLabel.textContent = label;
+}
+
+function updateToggleButton() {
+  if (!toggleVersionBtn) return;
+  const text = currentVersion === "template" ? "Mudar para Generated" : "Mudar para Template";
+  toggleVersionBtn.textContent = text;
+}
+
+toggleVersionBtn?.addEventListener("click", () => {
+  currentVersion = currentVersion === "template" ? "generated" : "template";
+  localStorage.setItem("pdfVersion", currentVersion);
+  updateVersionLabel();
+  updateToggleButton();
+  const msg = currentVersion === "template" ? "Usando versão Template (com PDF preenchido)" : "Usando versão Generated (com caixas azuis)";
+  showFeedback("success", "Versão Alterada", msg);
+});
+
+updateVersionLabel();
+updateToggleButton();
+
 const isTestMode = new URLSearchParams(window.location.search).get("teste") === "1";
 if (isTestMode) {
   testToolbar?.classList.remove("hidden");
@@ -152,7 +176,8 @@ formElement?.addEventListener("submit", async function (e) {
   setLoading(true);
 
   try {
-    const result = await postJson("submit.php", { form_data: formData });
+    const submitEndpoint = currentVersion === "template" ? "submit_template.php" : "submit.php";
+    const result = await postJson(submitEndpoint, { form_data: formData });
 
     if (result.email_sent === false) {
       const details = result.email_error ? " Detalhe: " + result.email_error : "";
