@@ -1,0 +1,7678 @@
+{
+  "pdf_file": "C:\\Users\\A_TET_TGEI\\Documents\\_0_Keenan\\Keenan_Form_Project\\valdoRio-formulario-v1.4\\basePDF_image\\MDDPE1406_Ficha_Candidatura_r0.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "width": 594.96,
+      "height": 842.04,
+      "fields": [
+        {
+          "text": "M",
+          "x": 39.72,
+          "y": 796.67,
+          "width": 8.52,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "D",
+          "x": 48.24,
+          "y": 796.67,
+          "width": 6.13,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "_",
+          "x": 54.36,
+          "y": 796.67,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "D",
+          "x": 59.32,
+          "y": 796.67,
+          "width": 6.13,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "P",
+          "x": 65.45,
+          "y": 796.67,
+          "width": 5.15,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "E",
+          "x": 70.6,
+          "y": 796.67,
+          "width": 4.86,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "_",
+          "x": 75.46,
+          "y": 796.67,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "1",
+          "x": 80.42,
+          "y": 796.67,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "4",
+          "x": 85.47,
+          "y": 796.67,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "_",
+          "x": 90.52,
+          "y": 796.67,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "0",
+          "x": 95.48,
+          "y": 796.67,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "6",
+          "x": 100.53,
+          "y": 796.67,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "XURTXU+Calibri"
+        },
+        {
+          "text": "2",
+          "x": 42.11,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "0",
+          "x": 46.16,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "2",
+          "x": 50.22,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "6",
+          "x": 54.27,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "XURTXU+Calibri"
+        },
+        {
+          "text": "-",
+          "x": 58.33,
+          "y": 808.5,
+          "width": 2.45,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "0",
+          "x": 60.77,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "4",
+          "x": 64.83,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "XURTXU+Calibri"
+        },
+        {
+          "text": "-",
+          "x": 68.89,
+          "y": 808.5,
+          "width": 2.45,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "1",
+          "x": 71.33,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "7",
+          "x": 75.39,
+          "y": 808.5,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "XURTXU+Calibri"
+        },
+        {
+          "text": "P",
+          "x": 476.54,
+          "y": 793.61,
+          "width": 5.15,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "á",
+          "x": 481.69,
+          "y": 793.61,
+          "width": 4.77,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "g",
+          "x": 486.49,
+          "y": 793.61,
+          "width": 4.69,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "i",
+          "x": 491.18,
+          "y": 793.61,
+          "width": 2.28,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "n",
+          "x": 493.46,
+          "y": 793.61,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "a",
+          "x": 498.69,
+          "y": 793.61,
+          "width": 4.77,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "1",
+          "x": 505.84,
+          "y": 793.61,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "d",
+          "x": 513.16,
+          "y": 793.61,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "e",
+          "x": 518.43,
+          "y": 793.61,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "2",
+          "x": 525.64,
+          "y": 793.61,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "F",
+          "x": 206.73,
+          "y": 137.41,
+          "width": 11.66,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 218.39,
+          "y": 137.41,
+          "width": 5.96,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 224.35,
+          "y": 137.41,
+          "width": 10.24,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "h",
+          "x": 234.59,
+          "y": 137.41,
+          "width": 11.86,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 246.45,
+          "y": 137.41,
+          "width": 10.66,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 263.13,
+          "y": 137.41,
+          "width": 11.62,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 274.75,
+          "y": 137.41,
+          "width": 11.5,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "C",
+          "x": 292.27,
+          "y": 137.41,
+          "width": 12.24,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 304.51,
+          "y": 137.41,
+          "width": 10.66,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 315.17,
+          "y": 137.41,
+          "width": 11.8,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 326.97,
+          "y": 137.41,
+          "width": 11.62,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 338.59,
+          "y": 137.41,
+          "width": 5.96,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 344.55,
+          "y": 137.41,
+          "width": 11.62,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 356.17,
+          "y": 137.41,
+          "width": 10.66,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 366.83,
+          "y": 137.41,
+          "width": 7.92,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 374.75,
+          "y": 137.41,
+          "width": 11.82,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 386.57,
+          "y": 137.41,
+          "width": 8.54,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 395.11,
+          "y": 137.41,
+          "width": 10.66,
+          "height": 20.0,
+          "size": 20.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "V",
+          "x": 212.77,
+          "y": 271.18,
+          "width": 5.85,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 218.64,
+          "y": 271.18,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 223.91,
+          "y": 271.18,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 226.79,
+          "y": 271.18,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 229.66,
+          "y": 271.18,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 235.2,
+          "y": 271.18,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 240.43,
+          "y": 271.18,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 245.98,
+          "y": 271.18,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 276.15,
+          "y": 228.64,
+          "width": 6.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 282.5,
+          "y": 228.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 287.73,
+          "y": 228.64,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 292.66,
+          "y": 228.64,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 295.5,
+          "y": 228.64,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 300.85,
+          "y": 228.64,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 306.29,
+          "y": 228.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 311.52,
+          "y": 228.64,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 314.46,
+          "y": 228.64,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 317.29,
+          "y": 228.64,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 322.84,
+          "y": 228.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 328.07,
+          "y": 228.64,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 333.62,
+          "y": 228.64,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 277.22,
+          "y": 249.51,
+          "width": 5.8,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 283.02,
+          "y": 249.51,
+          "width": 5.21,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 288.23,
+          "y": 249.51,
+          "width": 5.3,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 293.52,
+          "y": 249.51,
+          "width": 4.8,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 298.32,
+          "y": 249.51,
+          "width": 5.29,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 303.61,
+          "y": 249.51,
+          "width": 2.86,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "h",
+          "x": 306.47,
+          "y": 249.51,
+          "width": 5.3,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 311.76,
+          "y": 249.51,
+          "width": 5.21,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "/",
+          "x": 316.97,
+          "y": 249.51,
+          "width": 5.08,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "F",
+          "x": 322.05,
+          "y": 249.51,
+          "width": 5.09,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 327.14,
+          "y": 249.51,
+          "width": 3.77,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 330.92,
+          "y": 249.51,
+          "width": 5.29,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "g",
+          "x": 336.2,
+          "y": 249.51,
+          "width": 4.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 341.07,
+          "y": 249.51,
+          "width": 5.3,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 346.36,
+          "y": 249.51,
+          "width": 5.29,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 351.65,
+          "y": 249.51,
+          "width": 3.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 355.58,
+          "y": 249.51,
+          "width": 2.76,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 358.34,
+          "y": 249.51,
+          "width": 5.09,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 366.52,
+          "y": 249.51,
+          "width": 6.19,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 372.71,
+          "y": 249.51,
+          "width": 5.09,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 377.8,
+          "y": 249.51,
+          "width": 3.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 381.73,
+          "y": 249.51,
+          "width": 4.8,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ".",
+          "x": 386.53,
+          "y": 249.51,
+          "width": 3.56,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "I",
+          "x": 38.72,
+          "y": 177.9,
+          "width": 3.34,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 42.06,
+          "y": 177.9,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 49.03,
+          "y": 177.9,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 55.93,
+          "y": 177.9,
+          "width": 7.08,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 63.01,
+          "y": 177.9,
+          "width": 4.75,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 67.76,
+          "y": 177.9,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "f",
+          "x": 71.34,
+          "y": 177.9,
+          "width": 4.44,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 75.78,
+          "y": 177.9,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 79.35,
+          "y": 177.9,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 85.5,
+          "y": 177.9,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "ç",
+          "x": 91.89,
+          "y": 177.9,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "ã",
+          "x": 98.04,
+          "y": 177.9,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 104.43,
+          "y": 177.9,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 114.87,
+          "y": 177.9,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 121.84,
+          "y": 177.9,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "C",
+          "x": 132.24,
+          "y": 177.9,
+          "width": 7.34,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 139.59,
+          "y": 177.9,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 145.98,
+          "y": 177.9,
+          "width": 7.08,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 153.06,
+          "y": 177.9,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 160.04,
+          "y": 177.9,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 163.61,
+          "y": 177.9,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 170.58,
+          "y": 177.9,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 176.98,
+          "y": 177.9,
+          "width": 4.75,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 181.73,
+          "y": 177.9,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "C",
+          "x": 236.97,
+          "y": 349.23,
+          "width": 5.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ó",
+          "x": 242.96,
+          "y": 349.23,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 248.34,
+          "y": 349.23,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 253.89,
+          "y": 349.23,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "g",
+          "x": 256.73,
+          "y": 349.23,
+          "width": 5.0,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 261.77,
+          "y": 349.23,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "P",
+          "x": 270.16,
+          "y": 349.23,
+          "width": 5.56,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 275.67,
+          "y": 349.23,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 281.06,
+          "y": 349.23,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 285.13,
+          "y": 349.23,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 289.07,
+          "y": 349.23,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 294.37,
+          "y": 349.23,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "T",
+          "x": 286.08,
+          "y": 373.64,
+          "width": 5.18,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 291.26,
+          "y": 373.64,
+          "width": 4.86,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 296.12,
+          "y": 373.64,
+          "width": 2.63,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 298.75,
+          "y": 373.64,
+          "width": 4.86,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 303.6,
+          "y": 373.64,
+          "width": 7.4,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ó",
+          "x": 311.0,
+          "y": 373.64,
+          "width": 4.79,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "v",
+          "x": 315.79,
+          "y": 373.64,
+          "width": 4.37,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 320.15,
+          "y": 373.64,
+          "width": 4.86,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 325.01,
+          "y": 373.64,
+          "width": 2.63,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "S",
+          "x": 262.63,
+          "y": 397.64,
+          "width": 4.79,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 267.43,
+          "y": 397.64,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 270.26,
+          "y": 397.64,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 274.21,
+          "y": 397.64,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 279.65,
+          "y": 397.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ç",
+          "x": 284.88,
+          "y": 397.64,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ã",
+          "x": 289.81,
+          "y": 397.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 295.03,
+          "y": 397.64,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 303.44,
+          "y": 397.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 308.67,
+          "y": 397.64,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 313.6,
+          "y": 397.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 318.83,
+          "y": 397.64,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "é",
+          "x": 324.37,
+          "y": 397.64,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 329.8,
+          "y": 397.64,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 338.07,
+          "y": 397.64,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 340.91,
+          "y": 397.64,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 345.84,
+          "y": 397.64,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 39.72,
+          "y": 535.71,
+          "width": 7.34,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 47.06,
+          "y": 535.71,
+          "width": 7.09,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 54.12,
+          "y": 535.71,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 59.24,
+          "y": 535.71,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 64.43,
+          "y": 535.71,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 68.0,
+          "y": 535.71,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 74.15,
+          "y": 535.71,
+          "width": 7.09,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "l",
+          "x": 81.24,
+          "y": 535.71,
+          "width": 3.54,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 84.71,
+          "y": 535.71,
+          "width": 7.09,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "m",
+          "x": 91.8,
+          "y": 535.71,
+          "width": 10.31,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 105.72,
+          "y": 535.71,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 112.55,
+          "y": 535.71,
+          "width": 5.17,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 117.72,
+          "y": 535.71,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 123.83,
+          "y": 535.71,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "l",
+          "x": 130.66,
+          "y": 535.71,
+          "width": 3.54,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 134.24,
+          "y": 535.71,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 140.6,
+          "y": 535.71,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 149.34,
+          "y": 535.71,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "p",
+          "x": 159.98,
+          "y": 535.71,
+          "width": 7.0,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 166.94,
+          "y": 535.71,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 173.78,
+          "y": 535.71,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "f",
+          "x": 178.9,
+          "y": 535.71,
+          "width": 4.44,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 183.34,
+          "y": 535.71,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "l",
+          "x": 186.97,
+          "y": 535.71,
+          "width": 3.54,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 194.09,
+          "y": 535.71,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 201.06,
+          "y": 535.71,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 211.49,
+          "y": 535.71,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 217.6,
+          "y": 535.71,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 223.96,
+          "y": 535.71,
+          "width": 7.08,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 231.04,
+          "y": 535.71,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 238.01,
+          "y": 535.71,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 241.59,
+          "y": 535.71,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 248.56,
+          "y": 535.71,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 254.92,
+          "y": 535.71,
+          "width": 4.75,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 259.71,
+          "y": 535.71,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "E",
+          "x": 39.72,
+          "y": 566.55,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 45.0,
+          "y": 566.55,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 49.07,
+          "y": 566.55,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 53.02,
+          "y": 566.55,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "b",
+          "x": 58.31,
+          "y": 566.55,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 63.85,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 69.33,
+          "y": 566.55,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 72.21,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 77.64,
+          "y": 566.55,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 82.53,
+          "y": 566.55,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 85.4,
+          "y": 566.55,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 93.78,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 99.21,
+          "y": 566.55,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 104.58,
+          "y": 566.55,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 108.52,
+          "y": 566.55,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 113.93,
+          "y": 566.55,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 121.0,
+          "y": 566.55,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 126.63,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 135.06,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 140.55,
+          "y": 566.55,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 145.94,
+          "y": 566.55,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 150.02,
+          "y": 566.55,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 152.89,
+          "y": 566.55,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 158.39,
+          "y": 566.55,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "q",
+          "x": 166.78,
+          "y": 566.55,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 172.33,
+          "y": 566.55,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 177.71,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "f",
+          "x": 186.13,
+          "y": 566.55,
+          "width": 3.69,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 189.94,
+          "y": 566.55,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 193.78,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "q",
+          "x": 199.21,
+          "y": 566.55,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 204.81,
+          "y": 566.55,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 210.21,
+          "y": 566.55,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 215.71,
+          "y": 566.55,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 221.11,
+          "y": 566.55,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 225.06,
+          "y": 566.55,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 230.46,
+          "y": 566.55,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ":",
+          "x": 235.97,
+          "y": 566.55,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "1",
+          "x": 75.74,
+          "y": 598.37,
+          "width": 4.97,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ".",
+          "x": 80.66,
+          "y": 598.37,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "º",
+          "x": 84.14,
+          "y": 598.37,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 92.77,
+          "y": 598.37,
+          "width": 5.67,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 98.41,
+          "y": 598.37,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 101.16,
+          "y": 598.37,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 105.85,
+          "y": 598.37,
+          "width": 2.8,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 108.6,
+          "y": 598.37,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 118.79,
+          "y": 598.37,
+          "width": 5.28,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 124.19,
+          "y": 598.37,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 134.38,
+          "y": 598.37,
+          "width": 5.08,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 139.42,
+          "y": 598.37,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 144.6,
+          "y": 598.37,
+          "width": 3.84,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 148.44,
+          "y": 598.37,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 151.18,
+          "y": 598.37,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 156.45,
+          "y": 598.37,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "B",
+          "x": 166.64,
+          "y": 598.37,
+          "width": 5.37,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "á",
+          "x": 172.03,
+          "y": 598.37,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 177.07,
+          "y": 598.37,
+          "width": 3.84,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 180.91,
+          "y": 598.37,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 183.65,
+          "y": 598.37,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 188.35,
+          "y": 598.37,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "2",
+          "x": 75.74,
+          "y": 624.77,
+          "width": 4.97,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ".",
+          "x": 80.66,
+          "y": 624.77,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "º",
+          "x": 84.14,
+          "y": 624.77,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 92.77,
+          "y": 624.77,
+          "width": 5.67,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 98.41,
+          "y": 624.77,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 101.16,
+          "y": 624.77,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 105.85,
+          "y": 624.77,
+          "width": 2.8,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 108.71,
+          "y": 624.77,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 118.9,
+          "y": 624.77,
+          "width": 5.28,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 124.29,
+          "y": 624.77,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 134.48,
+          "y": 624.77,
+          "width": 5.08,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 139.53,
+          "y": 624.77,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 144.7,
+          "y": 624.77,
+          "width": 3.84,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 148.54,
+          "y": 624.77,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 151.28,
+          "y": 624.77,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 156.55,
+          "y": 624.77,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "B",
+          "x": 166.74,
+          "y": 624.77,
+          "width": 5.37,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "á",
+          "x": 172.14,
+          "y": 624.77,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 177.17,
+          "y": 624.77,
+          "width": 3.84,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 181.01,
+          "y": 624.77,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 183.76,
+          "y": 624.77,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 188.45,
+          "y": 624.77,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "3",
+          "x": 75.74,
+          "y": 651.17,
+          "width": 4.97,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ".",
+          "x": 80.66,
+          "y": 651.17,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "º",
+          "x": 84.14,
+          "y": 651.17,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 93.02,
+          "y": 651.17,
+          "width": 5.67,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 98.66,
+          "y": 651.17,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 101.41,
+          "y": 651.17,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 106.1,
+          "y": 651.17,
+          "width": 2.8,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 108.85,
+          "y": 651.17,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 119.29,
+          "y": 651.17,
+          "width": 5.28,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 124.68,
+          "y": 651.17,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 135.12,
+          "y": 651.17,
+          "width": 5.08,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 140.16,
+          "y": 651.17,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 145.34,
+          "y": 651.17,
+          "width": 3.84,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 149.18,
+          "y": 651.17,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 151.92,
+          "y": 651.17,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 157.19,
+          "y": 651.17,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "B",
+          "x": 167.62,
+          "y": 651.17,
+          "width": 5.37,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "á",
+          "x": 173.02,
+          "y": 651.17,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 178.05,
+          "y": 651.17,
+          "width": 3.84,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 181.89,
+          "y": 651.17,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 184.64,
+          "y": 651.17,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 189.33,
+          "y": 651.17,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "S",
+          "x": 75.74,
+          "y": 677.6,
+          "width": 4.56,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 80.3,
+          "y": 677.6,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 85.47,
+          "y": 677.6,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 90.16,
+          "y": 677.6,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 95.3,
+          "y": 677.6,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 100.48,
+          "y": 677.6,
+          "width": 5.28,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "á",
+          "x": 105.76,
+          "y": 677.6,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 110.77,
+          "y": 677.6,
+          "width": 3.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 114.48,
+          "y": 677.6,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 117.23,
+          "y": 677.6,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "A",
+          "x": 335.89,
+          "y": 45.26,
+          "width": 6.3,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 342.2,
+          "y": 45.26,
+          "width": 5.88,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 348.07,
+          "y": 45.26,
+          "width": 5.64,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "L",
+          "x": 356.71,
+          "y": 45.26,
+          "width": 5.51,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 362.22,
+          "y": 45.26,
+          "width": 5.73,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 367.94,
+          "y": 45.26,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 371.89,
+          "y": 45.26,
+          "width": 2.97,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "v",
+          "x": 374.85,
+          "y": 45.26,
+          "width": 5.25,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 380.1,
+          "y": 45.26,
+          "width": 5.64,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "C",
+          "x": 402.97,
+          "y": 70.57,
+          "width": 6.1,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 409.06,
+          "y": 70.57,
+          "width": 5.31,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 414.37,
+          "y": 70.57,
+          "width": 5.88,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 420.25,
+          "y": 70.57,
+          "width": 5.79,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 426.03,
+          "y": 70.57,
+          "width": 2.97,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 429.0,
+          "y": 70.57,
+          "width": 5.79,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 434.79,
+          "y": 70.57,
+          "width": 5.31,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 440.1,
+          "y": 70.57,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 444.04,
+          "y": 70.57,
+          "width": 5.89,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 449.93,
+          "y": 70.57,
+          "width": 4.25,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 454.18,
+          "y": 70.57,
+          "width": 5.31,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 462.49,
+          "y": 70.57,
+          "width": 5.88,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": ".",
+          "x": 468.36,
+          "y": 70.57,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "º",
+          "x": 472.02,
+          "y": 70.57,
+          "width": 4.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "C",
+          "x": 295.02,
+          "y": 91.4,
+          "width": 6.1,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 301.11,
+          "y": 91.4,
+          "width": 5.89,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 307.0,
+          "y": 91.4,
+          "width": 4.25,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 311.25,
+          "y": 91.4,
+          "width": 4.29,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 315.54,
+          "y": 91.4,
+          "width": 5.64,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "N",
+          "x": 38.78,
+          "y": 203.42,
+          "width": 6.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 45.14,
+          "y": 203.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 50.49,
+          "y": 203.42,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 58.75,
+          "y": 203.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 38.85,
+          "y": 227.42,
+          "width": 6.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 45.2,
+          "y": 227.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 50.43,
+          "y": 227.42,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 54.46,
+          "y": 227.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 59.39,
+          "y": 227.42,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 62.23,
+          "y": 227.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 67.78,
+          "y": 227.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 76.13,
+          "y": 227.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 81.55,
+          "y": 227.42,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 38.85,
+          "y": 251.42,
+          "width": 6.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 45.2,
+          "y": 251.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 50.43,
+          "y": 251.42,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 54.37,
+          "y": 251.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 59.81,
+          "y": 251.42,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 63.69,
+          "y": 251.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 68.92,
+          "y": 251.42,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 71.85,
+          "y": 251.42,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 74.69,
+          "y": 251.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 80.24,
+          "y": 251.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 85.47,
+          "y": 251.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 91.02,
+          "y": 251.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "(",
+          "x": 96.44,
+          "y": 251.42,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "P",
+          "x": 100.1,
+          "y": 251.42,
+          "width": 5.56,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 105.66,
+          "y": 251.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "í",
+          "x": 110.89,
+          "y": 251.42,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 113.73,
+          "y": 251.42,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ")",
+          "x": 117.76,
+          "y": 251.42,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 38.82,
+          "y": 271.03,
+          "width": 5.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 44.74,
+          "y": 271.03,
+          "width": 5.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "|",
+          "x": 50.72,
+          "y": 271.03,
+          "width": 5.24,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "O",
+          "x": 55.96,
+          "y": 271.03,
+          "width": 6.74,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 62.7,
+          "y": 271.03,
+          "width": 5.46,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 68.16,
+          "y": 271.03,
+          "width": 3.96,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 72.12,
+          "y": 271.03,
+          "width": 3.89,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 76.01,
+          "y": 271.03,
+          "width": 5.37,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 39.16,
+          "y": 292.54,
+          "width": 6.38,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "I",
+          "x": 45.54,
+          "y": 292.54,
+          "width": 2.78,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "F",
+          "x": 48.32,
+          "y": 292.54,
+          "width": 5.25,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "M",
+          "x": 39.72,
+          "y": 319.49,
+          "width": 7.06,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 46.78,
+          "y": 319.49,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 52.13,
+          "y": 319.49,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 56.0,
+          "y": 319.49,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 61.23,
+          "y": 319.49,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 66.78,
+          "y": 319.49,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "L",
+          "x": 40.68,
+          "y": 347.87,
+          "width": 5.04,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 45.72,
+          "y": 347.87,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 51.07,
+          "y": 347.87,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 56.0,
+          "y": 347.87,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 61.23,
+          "y": 347.87,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 64.17,
+          "y": 347.87,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 67.0,
+          "y": 347.87,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 72.55,
+          "y": 347.87,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 77.78,
+          "y": 347.87,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 83.33,
+          "y": 347.87,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "T",
+          "x": 41.64,
+          "y": 371.87,
+          "width": 5.79,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 47.43,
+          "y": 371.87,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 52.85,
+          "y": 371.87,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 55.79,
+          "y": 371.87,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "f",
+          "x": 61.22,
+          "y": 371.87,
+          "width": 3.69,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 64.91,
+          "y": 371.87,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 70.26,
+          "y": 371.87,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 75.69,
+          "y": 371.87,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 41.64,
+          "y": 395.87,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 46.98,
+          "y": 395.87,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 55.25,
+          "y": 395.87,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 60.47,
+          "y": 395.87,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 63.31,
+          "y": 395.87,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "width": 594.96,
+      "height": 842.04,
+      "fields": [
+        {
+          "text": "M",
+          "x": 39.03,
+          "y": 800.93,
+          "width": 8.52,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "D",
+          "x": 47.54,
+          "y": 800.93,
+          "width": 6.13,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "_",
+          "x": 53.67,
+          "y": 800.93,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "D",
+          "x": 58.63,
+          "y": 800.93,
+          "width": 6.13,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "P",
+          "x": 64.75,
+          "y": 800.93,
+          "width": 5.15,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "E",
+          "x": 69.9,
+          "y": 800.93,
+          "width": 4.86,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "_",
+          "x": 74.76,
+          "y": 800.93,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "1",
+          "x": 79.72,
+          "y": 800.93,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "4",
+          "x": 84.77,
+          "y": 800.93,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "_",
+          "x": 89.82,
+          "y": 800.93,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "0",
+          "x": 94.78,
+          "y": 800.93,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "6",
+          "x": 99.83,
+          "y": 800.93,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "2",
+          "x": 39.03,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "0",
+          "x": 43.08,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "2",
+          "x": 47.14,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "6",
+          "x": 51.19,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "-",
+          "x": 55.25,
+          "y": 812.76,
+          "width": 2.45,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "0",
+          "x": 57.7,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "4",
+          "x": 61.75,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "-",
+          "x": 65.81,
+          "y": 812.76,
+          "width": 2.45,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "1",
+          "x": 68.25,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "7",
+          "x": 72.31,
+          "y": 812.76,
+          "width": 4.06,
+          "height": 8.0,
+          "size": 8.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "P",
+          "x": 475.86,
+          "y": 799.35,
+          "width": 5.15,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "á",
+          "x": 481.0,
+          "y": 799.35,
+          "width": 4.77,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "g",
+          "x": 485.8,
+          "y": 799.35,
+          "width": 4.69,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "i",
+          "x": 490.49,
+          "y": 799.35,
+          "width": 2.28,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "n",
+          "x": 492.77,
+          "y": 799.35,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "a",
+          "x": 498.0,
+          "y": 799.35,
+          "width": 4.77,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "2",
+          "x": 505.15,
+          "y": 799.35,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "d",
+          "x": 512.47,
+          "y": 799.35,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "e",
+          "x": 517.74,
+          "y": 799.35,
+          "width": 4.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "2",
+          "x": 524.95,
+          "y": 799.35,
+          "width": 5.05,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "LQMTYH+Calibri"
+        },
+        {
+          "text": "E",
+          "x": 323.71,
+          "y": 89.49,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 329.05,
+          "y": 89.49,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 337.32,
+          "y": 89.49,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 342.55,
+          "y": 89.49,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 345.38,
+          "y": 89.49,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "F",
+          "x": 39.34,
+          "y": 32.54,
+          "width": 7.0,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "i",
+          "x": 46.34,
+          "y": 32.54,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "l",
+          "x": 49.91,
+          "y": 32.54,
+          "width": 3.54,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "i",
+          "x": 53.45,
+          "y": 32.54,
+          "width": 3.58,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "a",
+          "x": 57.03,
+          "y": 32.54,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "ç",
+          "x": 63.42,
+          "y": 32.54,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "ã",
+          "x": 69.57,
+          "y": 32.54,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "o",
+          "x": 75.96,
+          "y": 32.54,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "e",
+          "x": 86.37,
+          "y": 32.54,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "E",
+          "x": 96.88,
+          "y": 32.54,
+          "width": 6.83,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "n",
+          "x": 103.71,
+          "y": 32.54,
+          "width": 7.08,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "c",
+          "x": 110.79,
+          "y": 32.54,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "a",
+          "x": 116.93,
+          "y": 32.54,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "r",
+          "x": 123.33,
+          "y": 32.54,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "r",
+          "x": 128.45,
+          "y": 32.54,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "e",
+          "x": 133.57,
+          "y": 32.54,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "g",
+          "x": 140.48,
+          "y": 32.54,
+          "width": 6.02,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "a",
+          "x": 146.5,
+          "y": 32.54,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "d",
+          "x": 152.9,
+          "y": 32.54,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "o",
+          "x": 159.87,
+          "y": 32.54,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "d",
+          "x": 170.27,
+          "y": 32.54,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "e",
+          "x": 177.24,
+          "y": 32.54,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "E",
+          "x": 187.76,
+          "y": 32.54,
+          "width": 6.83,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "d",
+          "x": 194.58,
+          "y": 32.54,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "u",
+          "x": 201.56,
+          "y": 32.54,
+          "width": 7.09,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "c",
+          "x": 208.65,
+          "y": 32.54,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "a",
+          "x": 214.79,
+          "y": 32.54,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "ç",
+          "x": 221.19,
+          "y": 32.54,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "ã",
+          "x": 227.33,
+          "y": 32.54,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "o",
+          "x": 233.73,
+          "y": 32.54,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TQUYKR+TrebuchetMS-Bold"
+        },
+        {
+          "text": "P",
+          "x": 36.66,
+          "y": 64.27,
+          "width": 5.87,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QKAGIX+TrebuchetMS-Bold"
+        },
+        {
+          "text": "a",
+          "x": 42.52,
+          "y": 64.27,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QKAGIX+TrebuchetMS-Bold"
+        },
+        {
+          "text": "i",
+          "x": 47.86,
+          "y": 64.27,
+          "width": 2.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QKAGIX+TrebuchetMS-Bold"
+        },
+        {
+          "text": "-",
+          "x": 53.84,
+          "y": 64.57,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 60.18,
+          "y": 64.03,
+          "width": 6.05,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 66.23,
+          "y": 64.03,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 71.32,
+          "y": 64.03,
+          "width": 7.87,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 79.19,
+          "y": 64.03,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "T",
+          "x": 36.65,
+          "y": 91.85,
+          "width": 5.23,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 41.88,
+          "y": 91.85,
+          "width": 4.91,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 46.79,
+          "y": 91.85,
+          "width": 2.66,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 49.44,
+          "y": 91.85,
+          "width": 4.91,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 54.35,
+          "y": 91.85,
+          "width": 7.47,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "ó",
+          "x": 61.82,
+          "y": 91.85,
+          "width": 4.83,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "v",
+          "x": 66.65,
+          "y": 91.85,
+          "width": 4.41,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 71.06,
+          "y": 91.85,
+          "width": 4.91,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 75.97,
+          "y": 91.85,
+          "width": 2.66,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "M",
+          "x": 36.85,
+          "y": 141.55,
+          "width": 7.45,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QKAGIX+TrebuchetMS-Bold"
+        },
+        {
+          "text": "ã",
+          "x": 44.3,
+          "y": 141.55,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QKAGIX+TrebuchetMS-Bold"
+        },
+        {
+          "text": "e",
+          "x": 49.63,
+          "y": 141.55,
+          "width": 5.75,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "QKAGIX+TrebuchetMS-Bold"
+        },
+        {
+          "text": "-",
+          "x": 58.22,
+          "y": 141.86,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 64.56,
+          "y": 141.32,
+          "width": 6.05,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 70.61,
+          "y": 141.32,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 75.7,
+          "y": 141.32,
+          "width": 7.87,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 83.56,
+          "y": 141.32,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 326.04,
+          "y": 168.8,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 331.38,
+          "y": 168.8,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 339.65,
+          "y": 168.8,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 344.88,
+          "y": 168.8,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 347.72,
+          "y": 168.8,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "T",
+          "x": 41.01,
+          "y": 169.67,
+          "width": 5.23,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 46.24,
+          "y": 169.67,
+          "width": 4.91,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 51.15,
+          "y": 169.67,
+          "width": 2.66,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 53.8,
+          "y": 169.67,
+          "width": 4.91,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 58.71,
+          "y": 169.67,
+          "width": 7.47,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "ó",
+          "x": 66.18,
+          "y": 169.67,
+          "width": 4.83,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "v",
+          "x": 71.01,
+          "y": 169.67,
+          "width": 4.41,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 75.42,
+          "y": 169.67,
+          "width": 4.91,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 80.33,
+          "y": 169.67,
+          "width": 2.66,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "L",
+          "x": 374.2,
+          "y": 344.24,
+          "width": 4.55,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 378.75,
+          "y": 344.24,
+          "width": 4.83,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 383.58,
+          "y": 344.24,
+          "width": 4.45,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 388.04,
+          "y": 344.24,
+          "width": 4.73,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 392.76,
+          "y": 344.24,
+          "width": 2.65,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 395.42,
+          "y": 344.24,
+          "width": 2.56,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 397.98,
+          "y": 344.24,
+          "width": 5.01,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 403.0,
+          "y": 344.24,
+          "width": 4.73,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 407.72,
+          "y": 344.24,
+          "width": 5.01,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 412.73,
+          "y": 344.24,
+          "width": 4.9,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "T",
+          "x": 284.38,
+          "y": 385.24,
+          "width": 5.23,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 289.61,
+          "y": 385.24,
+          "width": 4.9,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 294.52,
+          "y": 385.24,
+          "width": 2.65,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 297.17,
+          "y": 385.24,
+          "width": 4.9,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 302.08,
+          "y": 385.24,
+          "width": 7.47,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "ó",
+          "x": 309.55,
+          "y": 385.24,
+          "width": 4.83,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "v",
+          "x": 314.38,
+          "y": 385.24,
+          "width": 4.41,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 318.79,
+          "y": 385.24,
+          "width": 4.9,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 323.7,
+          "y": 385.24,
+          "width": 2.65,
+          "height": 9.0,
+          "size": 9.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 36.13,
+          "y": 266.76,
+          "width": 6.83,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 42.96,
+          "y": 266.76,
+          "width": 7.08,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 50.04,
+          "y": 266.76,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 56.18,
+          "y": 266.76,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 62.58,
+          "y": 266.76,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 67.7,
+          "y": 266.76,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 72.83,
+          "y": 266.76,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "g",
+          "x": 79.73,
+          "y": 266.76,
+          "width": 6.02,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 85.75,
+          "y": 266.76,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 92.15,
+          "y": 266.76,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 99.12,
+          "y": 266.76,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 109.52,
+          "y": 266.76,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 116.49,
+          "y": 266.76,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "E",
+          "x": 126.93,
+          "y": 266.76,
+          "width": 6.83,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 133.76,
+          "y": 266.76,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 140.73,
+          "y": 266.76,
+          "width": 7.09,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 147.83,
+          "y": 266.76,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 153.97,
+          "y": 266.76,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "ç",
+          "x": 160.37,
+          "y": 266.76,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "ã",
+          "x": 166.51,
+          "y": 266.76,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 172.91,
+          "y": 266.76,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "(",
+          "x": 183.29,
+          "y": 266.76,
+          "width": 4.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "D",
+          "x": 187.69,
+          "y": 266.76,
+          "width": 7.72,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 195.41,
+          "y": 266.76,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 205.84,
+          "y": 266.76,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 212.24,
+          "y": 266.76,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 218.38,
+          "y": 266.76,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 225.17,
+          "y": 266.76,
+          "width": 5.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 230.3,
+          "y": 266.76,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 237.27,
+          "y": 266.76,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 247.67,
+          "y": 266.76,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 253.81,
+          "y": 266.76,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "m",
+          "x": 260.6,
+          "y": 266.76,
+          "width": 10.31,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 274.55,
+          "y": 266.76,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 284.98,
+          "y": 266.76,
+          "width": 6.97,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 291.95,
+          "y": 266.76,
+          "width": 6.9,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 298.85,
+          "y": 266.76,
+          "width": 5.17,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "p",
+          "x": 304.02,
+          "y": 266.76,
+          "width": 7.0,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 311.02,
+          "y": 266.76,
+          "width": 6.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 317.41,
+          "y": 266.76,
+          "width": 6.14,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "h",
+          "x": 323.56,
+          "y": 266.76,
+          "width": 7.12,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 330.67,
+          "y": 266.76,
+          "width": 6.79,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "1",
+          "x": 341.04,
+          "y": 266.76,
+          "width": 7.03,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "4",
+          "x": 348.07,
+          "y": 266.76,
+          "width": 7.03,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "0",
+          "x": 355.11,
+          "y": 266.76,
+          "width": 7.03,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "2",
+          "x": 362.14,
+          "y": 266.76,
+          "width": 7.03,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "6",
+          "x": 369.17,
+          "y": 266.76,
+          "width": 7.03,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "/",
+          "x": 376.2,
+          "y": 266.76,
+          "width": 4.68,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "0",
+          "x": 380.88,
+          "y": 266.76,
+          "width": 7.03,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "7",
+          "x": 387.91,
+          "y": 266.76,
+          "width": 7.03,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": ")",
+          "x": 394.94,
+          "y": 266.76,
+          "width": 4.4,
+          "height": 12.0,
+          "size": 12.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "N",
+          "x": 36.13,
+          "y": 277.42,
+          "width": 6.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 42.49,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 47.83,
+          "y": 277.42,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 54.9,
+          "y": 277.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 59.83,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 65.06,
+          "y": 277.42,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 69.1,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 74.45,
+          "y": 277.42,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 81.52,
+          "y": 277.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 87.06,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 95.41,
+          "y": 277.42,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 100.75,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 106.19,
+          "y": 277.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 111.12,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 116.35,
+          "y": 277.42,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 120.22,
+          "y": 277.42,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 124.1,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "g",
+          "x": 129.52,
+          "y": 277.42,
+          "width": 5.0,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 134.52,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 139.75,
+          "y": 277.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 145.3,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 153.8,
+          "y": 277.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 159.35,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 167.85,
+          "y": 277.42,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 173.19,
+          "y": 277.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 178.74,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 184.18,
+          "y": 277.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 189.11,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ç",
+          "x": 194.34,
+          "y": 277.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ã",
+          "x": 199.27,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 204.49,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 212.91,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ã",
+          "x": 218.35,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 223.58,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 231.99,
+          "y": 277.42,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 236.02,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 241.45,
+          "y": 277.42,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 248.26,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "P",
+          "x": 256.76,
+          "y": 277.42,
+          "width": 5.56,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 262.32,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 267.55,
+          "y": 277.42,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 273.42,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 278.85,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 284.28,
+          "y": 277.42,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 295.6,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "M",
+          "x": 303.87,
+          "y": 277.42,
+          "width": 7.06,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ã",
+          "x": 310.93,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 316.16,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ",",
+          "x": 321.59,
+          "y": 277.42,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 328.21,
+          "y": 277.42,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 331.05,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 336.49,
+          "y": 277.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 342.04,
+          "y": 277.42,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 344.87,
+          "y": 277.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 349.8,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 355.03,
+          "y": 277.42,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 361.91,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 370.41,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 375.84,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 381.19,
+          "y": 277.42,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 389.46,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ",",
+          "x": 394.89,
+          "y": 277.42,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 401.51,
+          "y": 277.42,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 409.78,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 415.13,
+          "y": 277.42,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 419.0,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 424.23,
+          "y": 277.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 429.78,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ",",
+          "x": 435.01,
+          "y": 277.42,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 441.62,
+          "y": 277.42,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 445.57,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 450.99,
+          "y": 277.42,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 453.93,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "f",
+          "x": 459.36,
+          "y": 277.42,
+          "width": 3.69,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 463.04,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 468.39,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 473.83,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 479.26,
+          "y": 277.42,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 486.26,
+          "y": 277.42,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 491.81,
+          "y": 277.42,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 500.4,
+          "y": 277.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 505.33,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 510.68,
+          "y": 277.42,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 516.12,
+          "y": 277.42,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 520.06,
+          "y": 277.42,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 525.29,
+          "y": 277.42,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 530.22,
+          "y": 277.42,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 534.16,
+          "y": 277.42,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 36.13,
+          "y": 292.18,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 44.62,
+          "y": 292.18,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 48.5,
+          "y": 292.18,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 53.92,
+          "y": 292.18,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 56.86,
+          "y": 292.18,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ç",
+          "x": 62.09,
+          "y": 292.18,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ã",
+          "x": 67.02,
+          "y": 292.18,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 72.25,
+          "y": 292.18,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "q",
+          "x": 80.77,
+          "y": 292.18,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 86.32,
+          "y": 292.18,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 91.75,
+          "y": 292.18,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 100.18,
+          "y": 292.18,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 104.12,
+          "y": 292.18,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 109.55,
+          "y": 292.18,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 121.02,
+          "y": 292.18,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 125.95,
+          "y": 292.18,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 131.3,
+          "y": 292.18,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 142.57,
+          "y": 292.18,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 150.97,
+          "y": 292.18,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 155.01,
+          "y": 292.18,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 160.43,
+          "y": 292.18,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 168.93,
+          "y": 292.18,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 174.27,
+          "y": 292.18,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "u",
+          "x": 179.82,
+          "y": 292.18,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 185.26,
+          "y": 292.18,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 190.19,
+          "y": 292.18,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 195.42,
+          "y": 292.18,
+          "width": 5.44,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 200.86,
+          "y": 292.18,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 206.4,
+          "y": 292.18,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": ".",
+          "x": 211.75,
+          "y": 292.18,
+          "width": 3.66,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 36.96,
+          "y": 323.2,
+          "width": 5.08,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 42.04,
+          "y": 323.2,
+          "width": 5.08,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": ":",
+          "x": 47.1,
+          "y": 322.66,
+          "width": 3.48,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "N",
+          "x": 53.44,
+          "y": 322.66,
+          "width": 6.05,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 59.48,
+          "y": 322.66,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 64.58,
+          "y": 322.66,
+          "width": 7.87,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 72.44,
+          "y": 322.66,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "S",
+          "x": 47.36,
+          "y": 530.84,
+          "width": 5.11,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 52.47,
+          "y": 530.84,
+          "width": 2.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "m",
+          "x": 55.45,
+          "y": 530.84,
+          "width": 8.59,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": ",",
+          "x": 64.04,
+          "y": 530.84,
+          "width": 3.67,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 70.72,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 76.05,
+          "y": 530.84,
+          "width": 5.12,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 81.17,
+          "y": 530.84,
+          "width": 5.75,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 86.92,
+          "y": 530.84,
+          "width": 2.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 89.9,
+          "y": 530.84,
+          "width": 3.96,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 93.86,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 102.53,
+          "y": 530.84,
+          "width": 3.96,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 106.49,
+          "y": 530.84,
+          "width": 4.27,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 110.76,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 116.09,
+          "y": 530.84,
+          "width": 3.96,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 120.05,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "m",
+          "x": 125.38,
+          "y": 530.84,
+          "width": 8.59,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 133.97,
+          "y": 530.84,
+          "width": 5.75,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 139.72,
+          "y": 530.84,
+          "width": 5.9,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 145.62,
+          "y": 530.84,
+          "width": 3.96,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 149.58,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 158.25,
+          "y": 530.84,
+          "width": 5.81,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 164.06,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 169.72,
+          "y": 530.84,
+          "width": 4.31,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "m",
+          "x": 177.04,
+          "y": 530.84,
+          "width": 8.59,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 185.63,
+          "y": 530.84,
+          "width": 5.75,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "u",
+          "x": 191.38,
+          "y": 530.84,
+          "width": 5.91,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 197.29,
+          "y": 530.84,
+          "width": 4.31,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 204.61,
+          "y": 530.84,
+          "width": 5.81,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 210.42,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 215.75,
+          "y": 530.84,
+          "width": 5.81,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 221.56,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 227.22,
+          "y": 530.84,
+          "width": 4.31,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 234.54,
+          "y": 530.84,
+          "width": 5.81,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 240.35,
+          "y": 530.84,
+          "width": 5.75,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 249.11,
+          "y": 530.84,
+          "width": 5.12,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 254.23,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 259.56,
+          "y": 530.84,
+          "width": 5.9,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 265.46,
+          "y": 530.84,
+          "width": 5.81,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 271.27,
+          "y": 530.84,
+          "width": 2.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 274.25,
+          "y": 530.84,
+          "width": 5.81,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 280.06,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "t",
+          "x": 285.39,
+          "y": 530.84,
+          "width": 3.96,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 289.35,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "p",
+          "x": 298.02,
+          "y": 530.84,
+          "width": 5.83,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "e",
+          "x": 303.85,
+          "y": 530.84,
+          "width": 5.75,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "l",
+          "x": 309.6,
+          "y": 530.84,
+          "width": 2.95,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 312.55,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "E",
+          "x": 320.89,
+          "y": 530.84,
+          "width": 5.69,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 326.58,
+          "y": 530.84,
+          "width": 4.31,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "c",
+          "x": 330.89,
+          "y": 530.84,
+          "width": 5.12,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 336.01,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "l",
+          "x": 341.67,
+          "y": 530.84,
+          "width": 2.95,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 344.62,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "p",
+          "x": 352.96,
+          "y": 530.84,
+          "width": 5.83,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "r",
+          "x": 358.79,
+          "y": 530.84,
+          "width": 4.27,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 363.06,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "f",
+          "x": 368.72,
+          "y": 530.84,
+          "width": 3.7,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 372.42,
+          "y": 530.84,
+          "width": 2.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 375.4,
+          "y": 530.84,
+          "width": 4.31,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "s",
+          "x": 379.71,
+          "y": 530.84,
+          "width": 4.31,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 384.02,
+          "y": 530.84,
+          "width": 2.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 387.0,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "n",
+          "x": 392.66,
+          "y": 530.84,
+          "width": 5.9,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 398.56,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "l",
+          "x": 403.89,
+          "y": 530.84,
+          "width": 2.95,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "V",
+          "x": 409.85,
+          "y": 530.84,
+          "width": 6.22,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "a",
+          "x": 416.07,
+          "y": 530.84,
+          "width": 5.33,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "l",
+          "x": 421.4,
+          "y": 530.84,
+          "width": 2.95,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "d",
+          "x": 427.36,
+          "y": 530.84,
+          "width": 5.81,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 433.17,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "FEFKFO+TrebuchetMS,Bold"
+        },
+        {
+          "text": "R",
+          "x": 441.81,
+          "y": 530.84,
+          "width": 6.11,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "i",
+          "x": 447.92,
+          "y": 530.84,
+          "width": 2.98,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "o",
+          "x": 450.9,
+          "y": 530.84,
+          "width": 5.66,
+          "height": 10.0,
+          "size": 10.0,
+          "font": "TCNPGR+TrebuchetMS,Bold"
+        },
+        {
+          "text": "M",
+          "x": 35.61,
+          "y": 343.29,
+          "width": 7.06,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 42.67,
+          "y": 343.29,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "r",
+          "x": 48.02,
+          "y": 343.29,
+          "width": 3.87,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 51.89,
+          "y": 343.29,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 57.12,
+          "y": 343.29,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 62.67,
+          "y": 343.29,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "C",
+          "x": 35.43,
+          "y": 363.21,
+          "width": 5.96,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ó",
+          "x": 41.39,
+          "y": 363.21,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 46.74,
+          "y": 363.21,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 52.28,
+          "y": 363.21,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "g",
+          "x": 55.12,
+          "y": 363.21,
+          "width": 5.0,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 60.12,
+          "y": 363.21,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "P",
+          "x": 68.51,
+          "y": 363.21,
+          "width": 5.56,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 74.06,
+          "y": 363.21,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 79.41,
+          "y": 363.21,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 83.45,
+          "y": 363.21,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 87.39,
+          "y": 363.21,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 92.62,
+          "y": 363.21,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "T",
+          "x": 35.43,
+          "y": 382.74,
+          "width": 5.51,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 40.94,
+          "y": 382.74,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 46.11,
+          "y": 382.74,
+          "width": 2.8,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 48.9,
+          "y": 382.74,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "f",
+          "x": 54.07,
+          "y": 382.74,
+          "width": 3.51,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 57.58,
+          "y": 382.74,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 62.67,
+          "y": 382.74,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 67.84,
+          "y": 382.74,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "E",
+          "x": 35.43,
+          "y": 405.21,
+          "width": 5.34,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 40.77,
+          "y": 405.21,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 49.04,
+          "y": 405.21,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 54.27,
+          "y": 405.21,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 57.1,
+          "y": 405.21,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "R",
+          "x": 37.09,
+          "y": 449.25,
+          "width": 5.52,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 42.61,
+          "y": 449.25,
+          "width": 5.17,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 47.77,
+          "y": 449.25,
+          "width": 2.8,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 50.57,
+          "y": 449.25,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ç",
+          "x": 55.55,
+          "y": 449.25,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "ã",
+          "x": 60.24,
+          "y": 449.25,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 65.22,
+          "y": 449.25,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 73.16,
+          "y": 449.25,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 77.85,
+          "y": 449.25,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 82.94,
+          "y": 449.25,
+          "width": 7.87,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 93.7,
+          "y": 449.25,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 101.65,
+          "y": 449.25,
+          "width": 4.69,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 106.34,
+          "y": 449.25,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "n",
+          "x": 111.32,
+          "y": 449.25,
+          "width": 5.18,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 116.49,
+          "y": 449.25,
+          "width": 5.28,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 121.77,
+          "y": 449.25,
+          "width": 2.7,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 124.48,
+          "y": 449.25,
+          "width": 5.28,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 129.76,
+          "y": 449.25,
+          "width": 4.98,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 134.73,
+          "y": 449.25,
+          "width": 3.75,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "o",
+          "x": 138.49,
+          "y": 449.25,
+          "width": 5.09,
+          "height": 9.48,
+          "size": 9.5,
+          "font": "BCDGEE+TrebuchetMS"
+        },
+        {
+          "text": "H",
+          "x": 36.96,
+          "y": 428.16,
+          "width": 6.51,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 43.48,
+          "y": 428.16,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "b",
+          "x": 48.7,
+          "y": 428.16,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 54.25,
+          "y": 428.16,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "l",
+          "x": 57.09,
+          "y": 428.16,
+          "width": 2.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 60.03,
+          "y": 428.16,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "t",
+          "x": 62.87,
+          "y": 428.16,
+          "width": 3.94,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 66.81,
+          "y": 428.16,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "ç",
+          "x": 72.04,
+          "y": 428.16,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "õ",
+          "x": 76.97,
+          "y": 428.16,
+          "width": 5.35,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "e",
+          "x": 82.32,
+          "y": 428.16,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 87.75,
+          "y": 428.16,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "A",
+          "x": 94.78,
+          "y": 428.16,
+          "width": 5.88,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 100.66,
+          "y": 428.16,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 105.59,
+          "y": 428.16,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "d",
+          "x": 110.82,
+          "y": 428.16,
+          "width": 5.55,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "é",
+          "x": 116.36,
+          "y": 428.16,
+          "width": 5.43,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "m",
+          "x": 121.79,
+          "y": 428.16,
+          "width": 8.27,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "i",
+          "x": 130.06,
+          "y": 428.16,
+          "width": 2.84,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "c",
+          "x": 132.9,
+          "y": 428.16,
+          "width": 4.93,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "a",
+          "x": 137.83,
+          "y": 428.16,
+          "width": 5.23,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        },
+        {
+          "text": "s",
+          "x": 143.06,
+          "y": 428.16,
+          "width": 4.03,
+          "height": 9.96,
+          "size": 10.0,
+          "font": "QTBLMX+TrebuchetMS"
+        }
+      ]
+    }
+  ]
+}
