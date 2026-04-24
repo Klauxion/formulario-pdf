@@ -101,6 +101,50 @@ function normalizeClientIp(?string $ip): string
     return $value;
 }
 
+function submitEnvValue(string $key, string $default = ''): string
+{
+    $value = getenv($key);
+    if ($value === false || $value === null) {
+        return $default;
+    }
+    return trim((string)$value);
+}
+
+function submitEnvInt(string $key, int $default): int
+{
+    $value = getenv($key);
+    if ($value === false || $value === null || trim((string)$value) === '') {
+        return $default;
+    }
+    $parsed = filter_var($value, FILTER_VALIDATE_INT);
+    if ($parsed === false) {
+        return $default;
+    }
+    return max(1, (int)$parsed);
+}
+
+function validateFormDataPayload(array $formData): bool
+{
+    // Defensive bounds to reduce abuse without changing normal behavior.
+    if (count($formData) > 300) {
+        return false;
+    }
+
+    foreach ($formData as $key => $value) {
+        if (!is_string($key) || strlen($key) > 120) {
+            return false;
+        }
+        if (is_array($value) || is_object($value)) {
+            return false;
+        }
+        if (is_string($value) && strlen($value) > 2000) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 function writeField(\setasign\Fpdi\Fpdi $pdf, float $x, float $y, array $formData, string $key, float $boxWidth = 80): void
 {
     // Special handling for compound fields
@@ -272,12 +316,49 @@ function sendEmailWithAttachment(array $config, string $recipientEmail, string $
 }
 
 header('Content-Type: application/json; charset=utf-8');
+header('X-Content-Type-Options: nosniff');
+header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+header('Pragma: no-cache');
+
+$allowedOrigin = submitEnvValue('SUBMIT_ALLOWED_ORIGIN', '');
+if ($allowedOrigin !== '') {
+    $requestOrigin = trim((string)($_SERVER['HTTP_ORIGIN'] ?? ''));
+    if ($requestOrigin !== '' && hash_equals($allowedOrigin, $requestOrigin)) {
+        header('Access-Control-Allow-Origin: ' . $allowedOrigin);
+        header('Vary: Origin');
+    } elseif ($requestOrigin !== '') {
+        jsonError(403, 'Origem nao permitida.');
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    header('Access-Control-Allow-Methods: POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type, X-API-Key');
+    http_response_code(204);
+    exit;
+}
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     jsonError(405, 'Metodo nao permitido.');
 }
 
+$requiredApiKey = submitEnvValue('SUBMIT_API_KEY', '');
+if ($requiredApiKey !== '') {
+    $providedApiKey = trim((string)($_SERVER['HTTP_X_API_KEY'] ?? ''));
+    if ($providedApiKey === '' || !hash_equals($requiredApiKey, $providedApiKey)) {
+        jsonError(401, 'Nao autorizado.');
+    }
+}
+
+$maxBodyBytes = submitEnvInt('SUBMIT_MAX_BODY_BYTES', 262144);
 $rawInput = file_get_contents('php://input');
+if ($rawInput === false) {
+    jsonError(400, 'Payload invalido.');
+}
+if (strlen($rawInput) > $maxBodyBytes) {
+    jsonError(413, 'Payload demasiado grande.');
+}
+
 $payload = json_decode($rawInput ?: '', true);
 
 if (!is_array($payload) || empty($payload)) {
@@ -299,6 +380,9 @@ if (!is_array($smtpConfig)
 $formData = isset($payload['form_data']) && is_array($payload['form_data']) ? $payload['form_data'] : $payload;
 
 if (empty($formData)) {
+    jsonError(400, 'Dados do formulario invalidos.');
+}
+if (!validateFormDataPayload($formData)) {
     jsonError(400, 'Dados do formulario invalidos.');
 }
 

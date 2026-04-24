@@ -54,6 +54,11 @@ SMTP_FROM_EMAIL=your-email@gmail.com
 SMTP_FROM_NAME=Val do Rio Form
 PDF_TEMPLATE_PATH=C:\caminho\absoluto\MDDPE1406_Ficha_Candidatura_r0_fixed.pdf
 ADMIN_PASSWORD=trocar-esta-password
+
+# Endurecimento opcional do endpoint (para producao)
+SUBMIT_API_KEY=
+SUBMIT_ALLOWED_ORIGIN=
+SUBMIT_MAX_BODY_BYTES=262144
 ```
 
 ## 2) Executar localmente
@@ -82,6 +87,12 @@ Abrir: `http://127.0.0.1:8080`
 6. Garantir permissao de escrita em `storage/submissions/`.
 7. Proteger `.env` (nunca publico) e usar `ADMIN_PASSWORD` forte.
 8. Testar fluxo completo: submissao -> PDF -> email -> painel admin.
+
+### Recomendado para API em producao
+
+- Definir `SUBMIT_API_KEY` e enviar `X-API-Key` no pedido do site cliente.
+- Definir `SUBMIT_ALLOWED_ORIGIN` com o dominio exato do frontend (quando aplicavel).
+- Ajustar `SUBMIT_MAX_BODY_BYTES` conforme o payload esperado.
 
 ## Notas
 
