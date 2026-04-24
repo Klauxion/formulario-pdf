@@ -1,33 +1,48 @@
-# Val do Rio Formulario
+# Formulario Val do Rio
 
-Simple PHP web app for school enrollment:
-- form in browser
-- PDF generation from template
-- email delivery via SMTP
-- admin area for submissions
+Aplicacao web em PHP para inscricoes escolares, com:
+- formulario no browser
+- geracao de PDF a partir de template
+- envio de email via SMTP
+- area de administracao para consultar inscricoes
 
-## Requirements
+## Dependencias do servidor
 
-- PHP 8.1+
+### Obrigatorias
+
+- PHP 8.1 ou superior
 - Composer
-- Web server with document root set to `public/`
+- Servidor web com document root apontado para `public/`
 
-## 1) Local setup
+### Extensoes PHP recomendadas/necessarias
 
-From project root:
+- `mbstring` (usada para conversao de texto no PDF)
+- `iconv` (normalizacao de nomes de ficheiro)
+- `json`
+- `openssl` (SMTP com TLS/SSL)
+
+### Dependencias PHP instaladas pelo Composer
+
+- `phpmailer/phpmailer`
+- `setasign/fpdf`
+- `setasign/fpdi`
+
+## 1) Configuracao local
+
+Na raiz do projeto:
 
 ```powershell
 composer install
 Copy-Item .env.example .env
 ```
 
-If `composer` is not in PATH:
+Se `composer` nao estiver no PATH:
 
 ```powershell
 php .\composer.phar install
 ```
 
-Edit `.env` with real values:
+Edite o `.env` com valores reais:
 
 ```env
 SMTP_HOST=smtp.gmail.com
@@ -37,11 +52,11 @@ SMTP_USERNAME=your-email@gmail.com
 SMTP_PASSWORD=your-app-password
 SMTP_FROM_EMAIL=your-email@gmail.com
 SMTP_FROM_NAME=Val do Rio Form
-PDF_TEMPLATE_PATH=C:\absolute\path\to\MDDPE1406_Ficha_Candidatura_r0_fixed.pdf
-ADMIN_PASSWORD=change-this-password
+PDF_TEMPLATE_PATH=C:\caminho\absoluto\MDDPE1406_Ficha_Candidatura_r0_fixed.pdf
+ADMIN_PASSWORD=trocar-esta-password
 ```
 
-## 2) Run locally
+## 2) Executar localmente
 
 PowerShell:
 
@@ -49,27 +64,27 @@ PowerShell:
 .\start.ps1
 ```
 
-Or CMD:
+Ou CMD:
 
 ```bat
 start.bat
 ```
 
-Then open `http://127.0.0.1:8080`.
+Abrir: `http://127.0.0.1:8080`
 
-## 3) Deploy on server (production)
+## 3) Deploy em servidor (producao)
 
-1. Upload project files to server.
-2. Run `composer install --no-dev --optimize-autoloader`.
-3. Create `.env` on server (same keys as above).
-4. Set `PDF_TEMPLATE_PATH` to an absolute path valid on the server.
-5. Configure web server docroot to `public/`.
-6. Ensure PHP can write to `storage/submissions/`.
-7. Protect `.env` (never public), and use a strong `ADMIN_PASSWORD`.
-8. Test full flow: submit form -> PDF generated -> email sent -> admin can view.
+1. Fazer upload dos ficheiros do projeto.
+2. Executar `composer install --no-dev --optimize-autoloader`.
+3. Criar/configurar `.env` no servidor.
+4. Definir `PDF_TEMPLATE_PATH` com um caminho absoluto valido no servidor.
+5. Configurar o servidor web para servir `public/` como raiz.
+6. Garantir permissao de escrita em `storage/submissions/`.
+7. Proteger `.env` (nunca publico) e usar `ADMIN_PASSWORD` forte.
+8. Testar fluxo completo: submissao -> PDF -> email -> painel admin.
 
-## Notes
+## Notas
 
-- Do not use static Live Server for this project. It needs PHP backend execution.
-- Keep secrets out of git (`.env`, SMTP passwords).
-- Optional Python mapping/calibration tools live in a separate repo: [python-mapping-tools](https://github.com/Klauxion/python-mapping-tools).
+- Nao usar Live Server estatico neste projeto (precisa de backend PHP).
+- Nao versionar segredos (`.env`, passwords SMTP).
+- Ferramentas opcionais de Python estao no repositorio separado: [python-mapping-tools](https://github.com/Klauxion/python-mapping-tools).
