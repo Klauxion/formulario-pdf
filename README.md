@@ -72,11 +72,11 @@ If `php` still does not work in terminal, restart terminal or add PHP to PATH.
 
 ## Optional: Python helper scripts
 
-Some scripts in the repo (e.g. `scripts/fill_pdf_template.py`) use Python and `pypdf`. They are not required to run the web app.
+Python analysis/calibration tooling was moved out of this repository to keep the production app PHP-only.
 
-```powershell
-python -m pip install -r requirements-optional.txt
-```
+If you want to use those tools later, use the separate repository:
+
+- `..\formulario-pdf-python-tools`
 
 ## Notes
 
