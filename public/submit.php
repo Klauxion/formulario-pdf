@@ -168,8 +168,8 @@ function buildPdfFromFormData(array $formData): string|false
     $pdf->SetTextColor(0, 0, 0);
 
     // Ano letivo (start/end) boxes in header
-    writeField($pdf, 156.0, 17.2, $formData, 'Ano Letivo Início', 14);
-    writeField($pdf, 174.0, 17.2, $formData, 'Ano Letivo Fim', 14);
+    writeField($pdf, 140.0, 15.5, $formData, 'Ano Letivo Início', 22);
+    writeField($pdf, 172.0, 15.5, $formData, 'Ano Letivo Fim', 22);
     writeField($pdf, 170.0, 24.4, $formData, 'Candidatura n.º', 25);
     writeField($pdf, 118.0, 31.7, $formData, 'Curso Pretendido', 65);
     
@@ -184,15 +184,15 @@ function buildPdfFromFormData(array $formData): string|false
     writeField($pdf, 28.0, 112.2, $formData, 'Rua', 164);
     writeField($pdf, 34.0, 122.2, $formData, 'Cidade', 60);
     writeField($pdf, 107.0, 122.7, $formData, 'Código Postal', 85);
-    writeField($pdf, 31.0, 130.7, $formData, 'Telefone', 40);
+    writeField($pdf, 31.0, 130.7, $formData, 'Telefone', 67);
     writeField($pdf, 118.0, 131.3, $formData, 'Telemóvel', 45);
-    writeField($pdf, 26.0, 139.2, $formData, 'Email', 50);
+    writeField($pdf, 26.0, 139.2, $formData, 'Email', 64);
     writeField($pdf, 126.0, 139.8, $formData, 'Último Ano de Frequência', 66);
 
     writeField($pdf, 74.0, 210.6, $formData, 'Escola Anterior', 118);
     writeField($pdf, 74.0, 219.9, $formData, 'Escola 2º Ciclo', 118);
     writeField($pdf, 74.0, 229.2, $formData, 'Escola 3º Ciclo', 118);
-    writeField($pdf, 74.0, 238.5, $formData, 'Escola Secundário', 118);
+    writeField($pdf, 48.0, 238.5, $formData, 'Escola Secundário', 144);
 
     // ── PAGE 2 ──
     $tpl2 = $pdf->importPage(2);
@@ -202,12 +202,12 @@ function buildPdfFromFormData(array $formData): string|false
     $pdf->SetFont('Arial', '', 9);
     $pdf->SetTextColor(0, 0, 0);
 
-    writeField($pdf, 40.0, 22.1, $formData, 'Nome do Pai', 150);
-    writeField($pdf, 30.0, 31.9, $formData, 'Telemóvel do Pai', 78);
+    writeField($pdf, 33.0, 22.1, $formData, 'Nome do Pai', 157);
+    writeField($pdf, 30.0, 31.1, $formData, 'Telemóvel do Pai', 81);
     writeField($pdf, 126.0, 31.1, $formData, 'Email do Pai', 64);
     
-    writeField($pdf, 40.0, 49.4, $formData, 'Nome da Mãe', 150);
-    writeField($pdf, 32.0, 59.4, $formData, 'Telemóvel da Mãe', 76);
+    writeField($pdf, 33.0, 49.4, $formData, 'Nome da Mãe', 157);
+    writeField($pdf, 30.0, 59.0, $formData, 'Telemóvel da Mãe', 81);
     writeField($pdf, 126.0, 59.0, $formData, 'Email da Mãe', 64);
 
     writeField($pdf, 30.0, 113.3, $formData, 'Nome do Encarregado', 160);
