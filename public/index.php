@@ -1,11 +1,68 @@
 
+<?php
+// Front controller - handle AJAX form submissions
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SERVER['CONTENT_TYPE']) && strpos($_SERVER['CONTENT_TYPE'], 'application/json') !== false) {
+    require_once __DIR__ . '/../app/submit.php';
+    exit;
+}
+
+// Handle asset requests
+if (isset($_GET['asset'])) {
+    $asset = $_GET['asset'];
+    $allowedAssets = ['style.css', 'script.js', 'vr_logo_2026.png'];
+    $basePDFAssets = ['MDDPE1406_Ficha_Candidatura_r0_fixed.pdf'];
+
+    if (in_array($asset, $allowedAssets)) {
+        $filePath = __DIR__ . '/../assets/' . $asset;
+        if (file_exists($filePath)) {
+            $mime = match(pathinfo($asset, PATHINFO_EXTENSION)) {
+                'css' => 'text/css',
+                'js' => 'application/javascript',
+                'png' => 'image/png',
+                default => 'application/octet-stream'
+            };
+            header('Content-Type: ' . $mime);
+            readfile($filePath);
+            exit;
+        }
+    } elseif (in_array($asset, $basePDFAssets)) {
+        $filePath = __DIR__ . '/../assets/basePDF_image/' . $asset;
+        if (file_exists($filePath)) {
+            header('Content-Type: application/pdf');
+            readfile($filePath);
+            exit;
+        }
+    }
+    http_response_code(404);
+    exit;
+}
+?>
+                'png' => 'image/png',
+                default => 'application/octet-stream'
+            };
+            header('Content-Type: ' . $mime);
+            readfile($filePath);
+            exit;
+        }
+    } elseif (in_array($asset, $basePDFAssets)) {
+        $filePath = __DIR__ . '/../assets/basePDF_image/' . $asset;
+        if (file_exists($filePath)) {
+            header('Content-Type: application/pdf');
+            readfile($filePath);
+            exit;
+        }
+    }
+    http_response_code(404);
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <title>Ficha de Inscrição - Val do Rio</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="?asset=style.css">
 </head>
 
 <body>
@@ -26,10 +83,10 @@
       <h1>Ficha de Inscrição</h1>
       <p>Escola Profissional Val do Rio</p>
     </div>
-    <img src="../assets/vr_logo_2026.png" alt="Logótipo Val do Rio">
+    <img src="?asset=vr_logo_2026.png" alt="Logótipo Val do Rio">
   </header>
 
-  <form id="formulario" action="../app/submit.php" method="POST">
+  <form id="formulario" action="" method="POST">
     <div id="test-toolbar" class="test-toolbar hidden">
       <button id="fillBtn" type="button">Preencher tudo</button>
       <button id="fillSubmitBtn" type="button" class="secondary">Preencher e submeter</button>
@@ -295,7 +352,7 @@
     </div>
   </form>
 
-  <script src="../assets/script.js"></script>
+  <script src="?asset=script.js"></script>
 </body>
 </html>
 

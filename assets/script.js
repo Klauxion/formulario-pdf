@@ -148,7 +148,7 @@ formElement?.addEventListener("submit", async function (e) {
   setLoading(true);
 
   try {
-    const result = await postJson("submit.php", { form_data: formData });
+    const result = await postJson("", { form_data: formData });
 
     if (result.email_sent === false) {
       const details = result.email_error ? " Detalhe: " + result.email_error : "";
