@@ -12,8 +12,6 @@ const feedbackOk = $("feedback-ok");
 const testToolbar = $("test-toolbar");
 const fillBtn = $("fillBtn");
 const fillSubmitBtn = $("fillSubmitBtn");
-const adminLink = $("admin-link");
-const adminSep = $("admin-sep");
 
 const TEST_SAMPLE_DATA = {
   primeiro_nome: "Ana",
@@ -123,8 +121,6 @@ feedbackOk?.addEventListener("click", hideFeedback);
 const isTestMode = new URLSearchParams(window.location.search).get("teste") === "1";
 if (isTestMode) {
   testToolbar?.classList.remove("hidden");
-  adminLink?.classList.remove("hidden");
-  adminSep?.classList.remove("hidden");
 }
 
 fillBtn?.addEventListener("click", () => fillFormWithSample());
