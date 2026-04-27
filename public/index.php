@@ -296,8 +296,6 @@
   </form>
   <div class="dev-tools-link">
     <a href="index.php?teste=1">modo de teste</a>
-    <span id="admin-sep" class="hidden">·</span>
-    <a id="admin-link" class="hidden" href="admin-login.php">admin</a>
   </div>
 
   <script src="script.js"></script>
