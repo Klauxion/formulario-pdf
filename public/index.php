@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Ficha de Inscrição - Val do Rio</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 
 <body>
@@ -26,10 +26,10 @@
       <h1>Ficha de Inscrição</h1>
       <p>Escola Profissional Val do Rio</p>
     </div>
-    <img src="vr_logo_2026.png" alt="Logótipo Val do Rio">
+    <img src="../assets/vr_logo_2026.png" alt="Logótipo Val do Rio">
   </header>
 
-  <form id="formulario">
+  <form id="formulario" action="../app/submit.php" method="POST">
     <div id="test-toolbar" class="test-toolbar hidden">
       <button id="fillBtn" type="button">Preencher tudo</button>
       <button id="fillSubmitBtn" type="button" class="secondary">Preencher e submeter</button>
@@ -295,7 +295,7 @@
     </div>
   </form>
 
-  <script src="script.js"></script>
+  <script src="../assets/script.js"></script>
 </body>
 </html>
 

@@ -145,12 +145,12 @@ function buildPdfFromFormData(array $formData): string|false
     $pdf = new \setasign\Fpdi\Fpdi();
     $templatePath = trim((string)getenv('PDF_TEMPLATE_PATH'));
     if ($templatePath === '') {
-        $templatePath = __DIR__ . '/../basePDF_image/MDDPE1406_Ficha_Candidatura_r0_fixed.pdf';
+        $templatePath = __DIR__ . '/../assets/basePDF_image/MDDPE1406_Ficha_Candidatura_r0_fixed.pdf';
     }
     
     // Fallback for root path just in case
     if (!is_file($templatePath)) {
-        $templatePath = __DIR__ . '/basePDF_image/MDDPE1406_Ficha_Candidatura_r0_fixed.pdf';
+        $templatePath = __DIR__ . '/../assets/basePDF_image/MDDPE1406_Ficha_Candidatura_r0_fixed.pdf';
     }
 
     if (!is_file($templatePath)) {
