@@ -9,45 +9,7 @@ const feedbackCard = $("feedback-card");
 const feedbackTitle = $("feedback-title");
 const feedbackMessage = $("feedback-message");
 const feedbackOk = $("feedback-ok");
-const testToolbar = $("test-toolbar");
-const fillBtn = $("fillBtn");
-const fillSubmitBtn = $("fillSubmitBtn");
-const adminLink = $("admin-link");
-const adminSep = $("admin-sep");
 
-const TEST_SAMPLE_DATA = {
-  primeiro_nome: "Ana",
-  ultimo_nome: "Silva",
-  email: "keenansb07@gmail.com",
-  data_nasc: "2008-03-15",
-  nif: "245678901",
-  acompanhante: "Maria Silva",
-  nacionalidade: "Portuguesa",
-  tipo_doc: "CC",
-  bi_cc: "12345678",
-  validade_doc: "2030-12-31",
-  rua: "Rua das Flores 123",
-  cidade: "Porto",
-  concelho: "Porto",
-  freguesia: "Cedofeita",
-  cod_postal: "4000-123",
-  escola_anterior: "Escola Basica do Centro",
-  ultimo_ano: "9º Ano",
-  curso_pretendido: "Tecnico de Multimedia",
-  tel_pai: "912345678",
-  tel_mae: "913456789",
-  email_pai: "pai.teste@example.com",
-  email_mae: "mae.teste@example.com",
-  nome_enc: "Carlos Silva",
-  tel_enc: "914567890",
-  email_enc: "encarregado.teste@example.com",
-  telefone_enc: "225551234",
-  morada_enc: "Rua das Acacias 45",
-  localidade_enc: "Vila Nova de Gaia",
-  cp_enc: "4400-210",
-  hab_enc: "12º Ano",
-  relacao: "Pai",
-};
 
 function hideFeedback() {
   if (!feedbackWindow) return;
@@ -105,33 +67,7 @@ async function postJson(url, payload) {
   return result;
 }
 
-function fillFormWithSample() {
-  Object.entries(TEST_SAMPLE_DATA).forEach(([id, value]) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.value = value;
-    el.dispatchEvent(new Event("input", { bubbles: true }));
-    el.dispatchEvent(new Event("change", { bubbles: true }));
-  });
-
-  const consent = document.querySelector('input[type="checkbox"][name="autoriza_dados"]');
-  if (consent) consent.checked = true;
-}
-
 feedbackOk?.addEventListener("click", hideFeedback);
-
-const isTestMode = new URLSearchParams(window.location.search).get("teste") === "1";
-if (isTestMode) {
-  testToolbar?.classList.remove("hidden");
-  adminLink?.classList.remove("hidden");
-  adminSep?.classList.remove("hidden");
-}
-
-fillBtn?.addEventListener("click", () => fillFormWithSample());
-fillSubmitBtn?.addEventListener("click", () => {
-  fillFormWithSample();
-  formElement?.requestSubmit();
-});
 
 formElement?.addEventListener("submit", async function (e) {
   e.preventDefault();

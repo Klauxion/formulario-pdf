@@ -43,36 +43,6 @@ function buildSubmissionId(): string
     return date('YmdHis') . '-' . bin2hex(random_bytes(4));
 }
 
-function getStorageDir(): string
-{
-    $projectRoot = dirname(__DIR__);
-    $preferredDir = $projectRoot . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'submissions';
-    $legacyDir = __DIR__ . DIRECTORY_SEPARATOR . 'submissions';
-
-    if (!is_dir($preferredDir) && !mkdir($preferredDir, 0777, true) && !is_dir($preferredDir)) {
-        return $preferredDir;
-    }
-
-    // One-time migration from old public directory to private storage directory.
-    if (is_dir($legacyDir)) {
-        $legacyFiles = scandir($legacyDir);
-        if (is_array($legacyFiles)) {
-            foreach ($legacyFiles as $legacyFile) {
-                if ($legacyFile === '.' || $legacyFile === '..') {
-                    continue;
-                }
-                $from = $legacyDir . DIRECTORY_SEPARATOR . $legacyFile;
-                $to = $preferredDir . DIRECTORY_SEPARATOR . $legacyFile;
-                if (is_file($from) && !is_file($to)) {
-                    @rename($from, $to);
-                }
-            }
-        }
-    }
-
-    return $preferredDir;
-}
-
 function jsonError(int $statusCode, string $message, array $extra = []): void
 {
     http_response_code($statusCode);
@@ -417,31 +387,6 @@ if (!$emailSent) {
     jsonError(400, 'Failed to send email. The destination email may be invalid or unreachable.', [
         'email_error' => $emailError,
     ]);
-}
-
-$storageDir = getStorageDir();
-if (!is_dir($storageDir) && !mkdir($storageDir, 0777, true) && !is_dir($storageDir)) {
-    jsonError(500, 'Nao foi possivel criar a pasta de dados.');
-}
-
-$pdfPath = $storageDir . DIRECTORY_SEPARATOR . $pdfFilename;
-if (file_put_contents($pdfPath, $pdfBinary, LOCK_EX) === false) {
-    jsonError(500, 'Email enviado, mas falhou ao guardar o PDF no servidor.');
-}
-
-$entry = [
-    'submission_id' => $submissionId,
-    'timestamp' => date('c'),
-    'ip' => $clientIp,
-    'client_ip' => $clientIp,
-    'data' => $formData,
-    'pdf_file' => $pdfFilename,
-];
-
-$filename = $storageDir . DIRECTORY_SEPARATOR . 'inscricoes.jsonl';
-$result = file_put_contents($filename, json_encode($entry, JSON_UNESCAPED_UNICODE) . PHP_EOL, FILE_APPEND | LOCK_EX);
-if ($result === false) {
-    jsonError(500, 'Email enviado, PDF guardado, mas falhou ao registar inscricao.');
 }
 
 echo json_encode([
