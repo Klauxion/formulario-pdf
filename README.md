@@ -58,19 +58,12 @@ ADMIN_PASSWORD=trocar-esta-password
 
 ## 2) Executar localmente
 
-PowerShell:
+### Laragon (recomendado)
 
-```powershell
-.\start.ps1
-```
+- Aponte o **Document Root** do site para `public/`
+- Inicie o site pelo Laragon (Apache/Nginx + PHP)
 
-Ou CMD:
-
-```bat
-start.bat
-```
-
-Abrir: `http://127.0.0.1:8080`
+Abrir o URL do Laragon para o projeto (ex.: `http://formulario-pdf-main.test/`).
 
 ## 3) Deploy em servidor (producao)
 
