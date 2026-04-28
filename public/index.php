@@ -1,4 +1,3 @@
-
 <?php
 // Front controller - handle AJAX form submissions
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SERVER['CONTENT_TYPE']) && strpos($_SERVER['CONTENT_TYPE'], 'application/json') !== false) {
@@ -36,31 +35,14 @@ if (isset($_GET['asset'])) {
     http_response_code(404);
     exit;
 }
-?>
-                'png' => 'image/png',
-                default => 'application/octet-stream'
-            };
-            header('Content-Type: ' . $mime);
-            readfile($filePath);
-            exit;
-        }
-    } elseif (in_array($asset, $basePDFAssets)) {
-        $filePath = __DIR__ . '/../assets/basePDF_image/' . $asset;
-        if (file_exists($filePath)) {
-            header('Content-Type: application/pdf');
-            readfile($filePath);
-            exit;
-        }
-    }
-    http_response_code(404);
-    exit;
-}
+
+header('Content-Type: text/html; charset=UTF-8');
 ?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Ficha de Inscrição - Val do Rio</title>
+  <title>Ficha de InscriÃ§Ã£o - Val do Rio</title>
   <!-- CSS -->
   <link rel="stylesheet" href="?asset=style.css">
 </head>
@@ -68,7 +50,7 @@ if (isset($_GET['asset'])) {
 <body>
   <div id="loading-overlay" class="loading-overlay hidden" aria-hidden="true">
     <div class="loading-spinner"></div>
-    <p>A enviar formulário...</p>
+    <p>A enviar formulÃ¡rio...</p>
   </div>
   <div id="feedback-window" class="feedback-window hidden" role="dialog" aria-modal="true" aria-live="polite">
     <div id="feedback-card" class="feedback-card">
@@ -80,10 +62,10 @@ if (isset($_GET['asset'])) {
 
   <header class="topo">
     <div>
-      <h1>Ficha de Inscrição</h1>
+      <h1>Ficha de InscriÃ§Ã£o</h1>
       <p>Escola Profissional Val do Rio</p>
     </div>
-    <img src="?asset=vr_logo_2026.png" alt="Logótipo Val do Rio">
+    <img src="?asset=vr_logo_2026.png" alt="LogÃ³tipo Val do Rio">
   </header>
 
   <form id="formulario" action="" method="POST">
@@ -98,8 +80,8 @@ if (isset($_GET['asset'])) {
 
       <div class="grid">
         <div class="field">
-          <label for="candidatura_num">Candidatura n.º</label>
-          <input id="candidatura_num" name="Candidatura n.º">
+          <label for="candidatura_num">Candidatura n.Âº</label>
+          <input id="candidatura_num" name="Candidatura n.Âº">
         </div>
 
         <div class="field">
@@ -108,8 +90,8 @@ if (isset($_GET['asset'])) {
         </div>
 
         <div class="field">
-          <label for="ultimo_nome">Último Nome</label>
-          <input id="ultimo_nome" name="Último Nome" required>
+          <label for="ultimo_nome">Ãšltimo Nome</label>
+          <input id="ultimo_nome" name="Ãšltimo Nome" required>
         </div>
 
         <div class="field">
@@ -128,8 +110,8 @@ if (isset($_GET['asset'])) {
         </div>
 
         <div class="field">
-          <label for="naturalidade">Naturalidade(País)</label>
-          <input id="naturalidade" name="Naturalidade(País)">
+          <label for="naturalidade">Naturalidade(PaÃ­s)</label>
+          <input id="naturalidade" name="Naturalidade(PaÃ­s)">
         </div>
 
         <div class="field">
@@ -187,8 +169,8 @@ if (isset($_GET['asset'])) {
         </div>
 
         <div class="field">
-          <label for="cod_postal">Código Postal</label>
-          <input id="cod_postal" name="Código Postal">
+          <label for="cod_postal">CÃ³digo Postal</label>
+          <input id="cod_postal" name="CÃ³digo Postal">
         </div>
       </div>
     </div>
@@ -204,16 +186,16 @@ if (isset($_GET['asset'])) {
         </div>
 
         <div class="field">
-          <label for="ultimo_ano">Último Ano de Frequência</label>
-          <select id="ultimo_ano" name="Último Ano de Frequência" required>
-            <option value="">-- Último Ano de Frequência --</option>
-            <option>6º Ano</option>
-            <option>7º Ano</option>
-            <option>8º Ano</option>
-            <option>9º Ano</option>
-            <option>10º Ano</option>
-            <option>11º Ano</option>
-            <option>12º Ano</option>
+          <label for="ultimo_ano">Ãšltimo Ano de FrequÃªncia</label>
+          <select id="ultimo_ano" name="Ãšltimo Ano de FrequÃªncia" required>
+            <option value="">-- Ãšltimo Ano de FrequÃªncia --</option>
+            <option>6Âº Ano</option>
+            <option>7Âº Ano</option>
+            <option>8Âº Ano</option>
+            <option>9Âº Ano</option>
+            <option>10Âº Ano</option>
+            <option>11Âº Ano</option>
+            <option>12Âº Ano</option>
           </select>
         </div>
 
@@ -221,31 +203,31 @@ if (isset($_GET['asset'])) {
           <label for="curso_pretendido">Curso Pretendido</label>
           <select id="curso_pretendido" name="Curso Pretendido" required>
             <option value="">-- Curso Pretendido --</option>
-            <option value="Tecnico de Acao Educativa">Técnico de Ação Educativa</option>
-            <option value="Tecnico de Desenho Digital 3D">Técnico de Desenho Digital 3D</option>
-            <option value="Tecnico de Eletronica e Telecomunicacoes">Técnico de Eletrónica e Telecomunicações</option>
-            <option value="Tecnico de Apoio Psicossocial">Técnico de Apoio Psicossocial</option>
-            <option value="Tecnico de Video">Técnico de Vídeo</option>
-            <option value="Tecnico de Design e Comunicacao Grafica">Técnico de Design e Comunicação Gráfica</option>
-            <option value="Tecnico de Multimedia">Técnico de Multimédia</option>
-            <option value="Tecnico de Auxiliar de Saude">Técnico de Auxiliar de Saúde</option>
-            <option value="Tecnico de Gestao Equipamentos Informaticos">Técnico de Gestão de Equipamentos Informáticos</option>
-            <option value="Tecnico Assistente Dentario">Técnico Assistente Dentário</option>
-            <option value="Tecnico Auxiliar de Farmacia">Técnico Auxiliar de Farmácia</option>
+            <option value="Tecnico de Acao Educativa">TÃ©cnico de AÃ§Ã£o Educativa</option>
+            <option value="Tecnico de Desenho Digital 3D">TÃ©cnico de Desenho Digital 3D</option>
+            <option value="Tecnico de Eletronica e Telecomunicacoes">TÃ©cnico de EletrÃ³nica e TelecomunicaÃ§Ãµes</option>
+            <option value="Tecnico de Apoio Psicossocial">TÃ©cnico de Apoio Psicossocial</option>
+            <option value="Tecnico de Video">TÃ©cnico de VÃ­deo</option>
+            <option value="Tecnico de Design e Comunicacao Grafica">TÃ©cnico de Design e ComunicaÃ§Ã£o GrÃ¡fica</option>
+            <option value="Tecnico de Multimedia">TÃ©cnico de MultimÃ©dia</option>
+            <option value="Tecnico de Auxiliar de Saude">TÃ©cnico de Auxiliar de SaÃºde</option>
+            <option value="Tecnico de Gestao Equipamentos Informaticos">TÃ©cnico de GestÃ£o de Equipamentos InformÃ¡ticos</option>
+            <option value="Tecnico Assistente Dentario">TÃ©cnico Assistente DentÃ¡rio</option>
+            <option value="Tecnico Auxiliar de Farmacia">TÃ©cnico Auxiliar de FarmÃ¡cia</option>
             <option value="Workshop para Novos Alunos">Workshop para Novos Alunos</option>
-            <option value="x Dispositivos moveis e gestao Cloud">x Dispositivos móveis e gestão Cloud</option>
-            <option value="x Informatica - Nocoes Basicas">x Informática - Noções Básicas</option>
-            <option value="x Criacao de Sites Web - UFCD0768">x Criação de Sites Web - UFCD0768</option>
+            <option value="x Dispositivos moveis e gestao Cloud">x Dispositivos mÃ³veis e gestÃ£o Cloud</option>
+            <option value="x Informatica - Nocoes Basicas">x InformÃ¡tica - NoÃ§Ãµes BÃ¡sicas</option>
+            <option value="x Criacao de Sites Web - UFCD0768">x CriaÃ§Ã£o de Sites Web - UFCD0768</option>
             <option value="x Processamento de Texto - UFCD0755">x Processamento de Texto - UFCD0755</option>
-            <option value="x Folhas de Calculo - UFCD0778">x Folhas de Cálculo - UFCD0778</option>
+            <option value="x Folhas de Calculo - UFCD0778">x Folhas de CÃ¡lculo - UFCD0778</option>
             <option value="x IT Essentials - CISCO">x IT Essentials - CISCO</option>
-            <option value="x Projecto e Instalacao ITED - Actualizacao">x Projecto e Instalação ITED – Actualização</option>
+            <option value="x Projecto e Instalacao ITED - Actualizacao">x Projecto e InstalaÃ§Ã£o ITED â€“ ActualizaÃ§Ã£o</option>
             <option value="x Instalador de ITED">x Instalador de ITED</option>
-            <option value="Tecnico de Informatica e Sistemas">Técnico de Informática e Sistemas</option>
-            <option value="Tecnico de Audiovisuais">Técnico de Audiovisuais</option>
-            <option value="Tecnico de Eletronica e Comunicacoes">Técnico de Eletrónica e Comunicações</option>
-            <option value="Tecnico de Sistemas de Computacao e Redes">Técnico de Sistemas de Computação e Redes</option>
-            <option value="Tecnico de Desenvolvimento de Software">Técnico de Desenvolvimento de Software</option>
+            <option value="Tecnico de Informatica e Sistemas">TÃ©cnico de InformÃ¡tica e Sistemas</option>
+            <option value="Tecnico de Audiovisuais">TÃ©cnico de Audiovisuais</option>
+            <option value="Tecnico de Eletronica e Comunicacoes">TÃ©cnico de EletrÃ³nica e ComunicaÃ§Ãµes</option>
+            <option value="Tecnico de Sistemas de Computacao e Redes">TÃ©cnico de Sistemas de ComputaÃ§Ã£o e Redes</option>
+            <option value="Tecnico de Desenvolvimento de Software">TÃ©cnico de Desenvolvimento de Software</option>
           </select>
         </div>
       </div>
@@ -253,17 +235,17 @@ if (isset($_GET['asset'])) {
 
     <!-- ENCARREGADO -->
     <div class="card">
-      <h2>Afiliação/Dados do Encarregado de Educação</h2>
+      <h2>AfiliaÃ§Ã£o/Dados do Encarregado de EducaÃ§Ã£o</h2>
 
       <div class="grid">
         <div class="field">
-          <label for="tel_pai">Telemóvel do Pai</label>
-          <input id="tel_pai" name="Telemóvel do Pai">
+          <label for="tel_pai">TelemÃ³vel do Pai</label>
+          <input id="tel_pai" name="TelemÃ³vel do Pai">
         </div>
 
         <div class="field">
-          <label for="tel_mae">Telemóvel da Mãe</label>
-          <input id="tel_mae" name="Telemóvel da Mãe">
+          <label for="tel_mae">TelemÃ³vel da MÃ£e</label>
+          <input id="tel_mae" name="TelemÃ³vel da MÃ£e">
         </div>
 
         <div class="field">
@@ -272,8 +254,8 @@ if (isset($_GET['asset'])) {
         </div>
 
         <div class="field">
-          <label for="email_mae">Email da Mãe</label>
-          <input id="email_mae" name="Email da Mãe">
+          <label for="email_mae">Email da MÃ£e</label>
+          <input id="email_mae" name="Email da MÃ£e">
         </div>
 
         <div class="field">
@@ -282,8 +264,8 @@ if (isset($_GET['asset'])) {
         </div>
 
         <div class="field">
-          <label for="tel_enc">Telemóvel do Encarregado</label>
-          <input id="tel_enc" name="Telemóvel do Encarregado">
+          <label for="tel_enc">TelemÃ³vel do Encarregado</label>
+          <input id="tel_enc" name="TelemÃ³vel do Encarregado">
         </div>
 
         <div class="field">
@@ -307,25 +289,25 @@ if (isset($_GET['asset'])) {
         </div>
 
         <div class="field">
-          <label for="cp_enc">Código Postal do Encarregado</label>
-          <input id="cp_enc" name="Código Postal do Encarregado">
+          <label for="cp_enc">CÃ³digo Postal do Encarregado</label>
+          <input id="cp_enc" name="CÃ³digo Postal do Encarregado">
         </div>
 
         <div class="field">
-          <label for="hab_enc">Habilitações do Encarregado</label>
-          <input id="hab_enc" name="Habilitações do Encarregado">
+          <label for="hab_enc">HabilitaÃ§Ãµes do Encarregado</label>
+          <input id="hab_enc" name="HabilitaÃ§Ãµes do Encarregado">
         </div>
 
         <div class="field">
-          <label for="relacao">Relação do Candidato</label>
-          <select id="relacao" name="Relação do Candidato" required>
-            <option value="">-- Relação do Candidato --</option>
+          <label for="relacao">RelaÃ§Ã£o do Candidato</label>
+          <select id="relacao" name="RelaÃ§Ã£o do Candidato" required>
+            <option value="">-- RelaÃ§Ã£o do Candidato --</option>
             <option>Pai</option>
-            <option>Mãe</option>
+            <option>MÃ£e</option>
             <option>Tio</option>
-            <option>Avô</option>
+            <option>AvÃ´</option>
             <option>Padrinho</option>
-            <option>Irmão</option>
+            <option>IrmÃ£o</option>
             <option>Tutor</option>
             <option>Outro</option>
           </select>
@@ -333,12 +315,12 @@ if (isset($_GET['asset'])) {
       </div>
     </div>
 
-    <!-- AUTORIZAÇÃO -->
+    <!-- AUTORIZAÃ‡ÃƒO -->
     <div class="card">
-      <h2>Autorizações</h2>
+      <h2>AutorizaÃ§Ãµes</h2>
 
-      <!-- garante que aparece sempre Sim/Não no PDF -->
-      <input type="hidden" name="autoriza_dados" value="Não">
+      <!-- garante que aparece sempre Sim/NÃ£o no PDF -->
+      <input type="hidden" name="autoriza_dados" value="NÃ£o">
 
       <label class="checkline">
         <input type="checkbox" name="autoriza_dados" value="Sim">
@@ -346,13 +328,14 @@ if (isset($_GET['asset'])) {
       </label>
     </div>
 
-    <!-- BOTÕES -->
+    <!-- BOTÃ•ES -->
     <div class="actions">
-      <button type="submit">Enviar formulário</button>
+      <button type="submit">Enviar formulÃ¡rio</button>
     </div>
   </form>
 
   <script src="?asset=script.js"></script>
 </body>
 </html>
+
 
