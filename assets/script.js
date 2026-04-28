@@ -83,7 +83,11 @@ function getFormDataObject(form) {
 async function postJson(url, payload) {
   const response = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      Accept: "application/json",
+      "X-Requested-With": "XMLHttpRequest",
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(payload),
   });
 
@@ -133,7 +137,7 @@ formElement?.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   if (window.location.protocol === "file:") {
-    showFeedback("error", "Erro", "Abre o formulario via servidor PHP (http://127.0.0.1:8080), nao via ficheiro local.");
+    showFeedback("error", "Erro", "Abra o formulário através de um servidor web (ex.: Laragon), e não como ficheiro local.");
     return;
   }
 
@@ -141,14 +145,35 @@ formElement?.addEventListener("submit", async function (e) {
 
   const emailValue = (emailInput?.value || "").trim();
   if (!isValidEmail(emailValue)) {
-    showFeedback("error", "Failed", "Email is not valid. Please enter a valid email before sending.");
+    showFeedback("error", "Erro", "O email não é válido. Indique um endereço válido antes de enviar.");
     return;
   }
 
   setLoading(true);
 
   try {
-    const result = await postJson("", { form_data: formData });
+    // Prefer posting as regular form data (works with normal PHP backends)
+    const response = await fetch("", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+      },
+      body: new FormData(this),
+    });
+
+    const rawText = await response.text();
+    let result;
+    try {
+      result = JSON.parse(rawText);
+    } catch {
+      throw new Error("Resposta inválida do servidor: " + rawText);
+    }
+
+    if (!response.ok || result.ok === false) {
+      const details = result.email_error ? " Detalhe SMTP: " + result.email_error : "";
+      throw new Error((result.message || "Falha ao guardar os dados.") + details);
+    }
 
     if (result.email_sent === false) {
       const details = result.email_error ? " Detalhe: " + result.email_error : "";
@@ -157,19 +182,28 @@ formElement?.addEventListener("submit", async function (e) {
       return;
     }
 
-    showFeedback("success", "Success!", "PDF gerado e enviado por email.");
+    showFeedback("success", "Sucesso", "PDF gerado e enviado por email.");
   } catch (error) {
     const backendMessage = (error.message || "").trim();
     const normalized = backendMessage.toLowerCase();
-    const invalidCandidateEmail = normalized.includes("email do candidato invalido")
+    const invalidCandidateEmail = normalized.includes("email do candidato inválido")
       || normalized.includes("email is not valid");
 
     if (invalidCandidateEmail) {
-      showFeedback("error", "Failed", "Email is not valid. Please enter a valid email before sending.");
+      showFeedback("error", "Erro", "O email não é válido. Indique um endereço válido antes de enviar.");
     } else {
-      showFeedback("error", "Erro", "Nao foi possivel enviar os dados. " + (backendMessage || "Erro desconhecido."));
+      showFeedback("error", "Erro", "Não foi possível enviar os dados. " + (backendMessage || "Erro desconhecido."));
     }
   } finally {
     setLoading(false);
   }
 });
+
+// Server-side flash message (GET after POST redirect)
+const flashEl = document.getElementById("flash-feedback");
+if (flashEl) {
+  const type = flashEl.getAttribute("data-type") || "success";
+  const title = flashEl.getAttribute("data-title") || "Info";
+  const message = flashEl.getAttribute("data-message") || "";
+  showFeedback(type, title, message);
+}

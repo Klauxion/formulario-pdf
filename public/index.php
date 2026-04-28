@@ -1,364 +1,128 @@
 <?php
-// Front controller - handle AJAX form submissions
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SERVER['CONTENT_TYPE']) && strpos($_SERVER['CONTENT_TYPE'], 'application/json') !== false) {
-    require_once __DIR__ . '/../app/submit.php';
+declare(strict_types=1);
+
+session_start();
+
+function serveAssetIfRequested(): bool
+{
+    if (!isset($_GET['asset'])) {
+        return false;
+    }
+
+    $asset = trim((string)$_GET['asset']);
+    $map = [
+        'style.css' => [__DIR__ . '/../assets/style.css', 'text/css; charset=UTF-8'],
+        'script.js' => [__DIR__ . '/../assets/script.js', 'application/javascript; charset=UTF-8'],
+        'vr_logo_2026.png' => [__DIR__ . '/../assets/images/vr_logo_2026.png', 'image/png'],
+    ];
+
+    if (!isset($map[$asset])) {
+        http_response_code(404);
+        header('Content-Type: text/plain; charset=UTF-8');
+        echo 'Asset não encontrado.';
+        exit;
+    }
+
+    [$path, $mime] = $map[$asset];
+    if (!is_file($path)) {
+        http_response_code(404);
+        header('Content-Type: text/plain; charset=UTF-8');
+        echo 'Asset não encontrado.';
+        exit;
+    }
+
+    header('Content-Type: ' . $mime);
+    header('X-Content-Type-Options: nosniff');
+    readfile($path);
     exit;
 }
 
-// Handle asset requests
-if (isset($_GET['asset'])) {
-    $asset = $_GET['asset'];
-    $allowedAssets = ['style.css', 'script.js', 'vr_logo_2026.png'];
-    $basePDFAssets = ['MDDPE1406_Ficha_Candidatura_r0_fixed.pdf'];
+serveAssetIfRequested();
 
-    if (in_array($asset, $allowedAssets)) {
-        $filePath = __DIR__ . '/../assets/' . $asset;
-        if (file_exists($filePath)) {
-            $mime = match(pathinfo($asset, PATHINFO_EXTENSION)) {
-                'css' => 'text/css',
-                'js' => 'application/javascript',
-                'png' => 'image/png',
-                default => 'application/octet-stream'
-            };
-            header('Content-Type: ' . $mime);
-            readfile($filePath);
-            exit;
+// --- Security headers (basic) ---
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: DENY');
+header("Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'");
+
+function wantsJson(): bool
+{
+    $accept = strtolower((string)($_SERVER['HTTP_ACCEPT'] ?? ''));
+    $xrw = strtolower((string)($_SERVER['HTTP_X_REQUESTED_WITH'] ?? ''));
+    return str_contains($accept, 'application/json') || $xrw === 'xmlhttprequest';
+}
+
+function jsonResponse(array $payload, int $statusCode = 200): void
+{
+    http_response_code($statusCode);
+    header('Content-Type: application/json; charset=UTF-8');
+    echo json_encode($payload, JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+function redirectTo(string $location): void
+{
+    header('Location: ' . $location, true, 303);
+    exit;
+}
+
+// DEV TOOLS (testing mode) - set to false or remove for production
+$showTestModeToggle = true;
+$isTestMode = isset($_GET['teste']) && (string)$_GET['teste'] === '1';
+
+// --- CSRF token ---
+if (!isset($_SESSION['csrf_token']) || !is_string($_SESSION['csrf_token']) || $_SESSION['csrf_token'] === '') {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+$csrfToken = (string)$_SESSION['csrf_token'];
+
+$method = strtoupper((string)($_SERVER['REQUEST_METHOD'] ?? 'GET'));
+
+if ($method === 'POST') {
+    $postedToken = isset($_POST['csrf_token']) ? (string)$_POST['csrf_token'] : '';
+    if ($postedToken === '' || !hash_equals($csrfToken, $postedToken)) {
+        if (wantsJson()) {
+            jsonResponse(['ok' => false, 'message' => 'Pedido inválido (CSRF).'], 419);
         }
-    } elseif (in_array($asset, $basePDFAssets)) {
-        $filePath = __DIR__ . '/../assets/basePDF_image/' . $asset;
-        if (file_exists($filePath)) {
-            header('Content-Type: application/pdf');
-            readfile($filePath);
-            exit;
-        }
+        $_SESSION['flash'] = ['type' => 'error', 'title' => 'Erro', 'message' => 'Pedido inválido. Atualize a página e tente novamente.'];
+        redirectTo($_SERVER['PHP_SELF']);
     }
-    http_response_code(404);
+
+    require_once __DIR__ . '/../app/submit.php';
+    $result = submitForm($_POST);
+
+    if (wantsJson()) {
+        $ok = ($result['ok'] ?? false) === true;
+        $status = $ok ? 200 : (int)($result['status'] ?? 400);
+        jsonResponse($result, $status);
+    }
+
+    // PRG pattern (avoid form resubmission)
+    if (($result['ok'] ?? false) === true) {
+        $_SESSION['flash'] = ['type' => 'success', 'title' => 'Sucesso', 'message' => 'Formulário enviado com sucesso.'];
+    } else {
+        $_SESSION['flash'] = ['type' => 'error', 'title' => 'Erro', 'message' => (string)($result['message'] ?? 'Não foi possível enviar o formulário.')];
+    }
+
+    redirectTo($_SERVER['PHP_SELF'] . ($isTestMode ? '?teste=1' : ''));
+}
+
+if ($method !== 'GET') {
+    if (wantsJson()) {
+        jsonResponse(['ok' => false, 'message' => 'Método não permitido.'], 405);
+    }
+    http_response_code(405);
+    header('Content-Type: text/plain; charset=UTF-8');
+    echo 'Método não permitido.';
     exit;
 }
 
 header('Content-Type: text/html; charset=UTF-8');
 
-// DEV TOOLS (testing mode)
-// Set to false (or remove this block) when going to production.
-$SHOW_TEST_MODE_TOGGLE = true;
-?>
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <title>Ficha de Inscrição - Val do Rio</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="?asset=style.css">
-</head>
+$flash = null;
+if (isset($_SESSION['flash']) && is_array($_SESSION['flash'])) {
+    $flash = $_SESSION['flash'];
+    unset($_SESSION['flash']);
+}
 
-<body>
-  <div id="loading-overlay" class="loading-overlay hidden" aria-hidden="true">
-    <div class="loading-spinner"></div>
-    <p>A enviar formulário...</p>
-  </div>
-  <div id="feedback-window" class="feedback-window hidden" role="dialog" aria-modal="true" aria-live="polite">
-    <div id="feedback-card" class="feedback-card">
-      <div id="feedback-title" class="feedback-title"></div>
-      <div id="feedback-message" class="feedback-message"></div>
-      <button id="feedback-ok" class="feedback-ok" type="button">OK</button>
-    </div>
-  </div>
-
-  <header class="topo">
-    <div>
-      <h1>Ficha de Inscrição</h1>
-      <p>Escola Profissional Val do Rio</p>
-    </div>
-    <img src="?asset=vr_logo_2026.png" alt="Logótipo Val do Rio">
-  </header>
-
-  <?php
-    $isTestMode = isset($_GET['teste']) && (string)$_GET['teste'] === '1';
-    if ($SHOW_TEST_MODE_TOGGLE) {
-      $qs = $_GET;
-      unset($qs['asset']); // safety
-
-      if ($isTestMode) {
-        unset($qs['teste']);
-        $label = 'Sair do modo de teste';
-      } else {
-        $qs['teste'] = '1';
-        $label = 'Ativar modo de teste';
-      }
-
-      $href = $_SERVER['PHP_SELF'] . (count($qs) ? ('?' . http_build_query($qs)) : '');
-      echo '<div class="dev-tools-link"><a href="' . htmlspecialchars($href, ENT_QUOTES, 'UTF-8') . '">' . htmlspecialchars($label, ENT_QUOTES, 'UTF-8') . '</a></div>';
-    }
-  ?>
-
-  <form id="formulario" action="" method="POST">
-    <div id="test-toolbar" class="test-toolbar hidden">
-      <button id="fillBtn" type="button">Preencher tudo</button>
-      <button id="fillSubmitBtn" type="button" class="secondary">Preencher e submeter</button>
-    </div>
-
-    <!-- DADOS DO ALUNO -->
-    <div class="card">
-      <h2>Dados do Aluno</h2>
-
-      <div class="grid">
-        <div class="field">
-          <label for="candidatura_num">Candidatura n.º</label>
-          <input id="candidatura_num" name="Candidatura n.º">
-        </div>
-
-        <div class="field">
-          <label for="primeiro_nome">Primeiro Nome</label>
-          <input id="primeiro_nome" name="Primeiro Nome" required>
-        </div>
-
-        <div class="field">
-          <label for="ultimo_nome">Último Nome</label>
-          <input id="ultimo_nome" name="Último Nome" required>
-        </div>
-
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="Email" type="email">
-        </div>
-
-        <div class="field">
-          <label for="data_nasc">Data de Nascimento</label>
-          <input id="data_nasc" name="Data de Nascimento">
-        </div>
-
-        <div class="field">
-          <label for="nif">NIF</label>
-          <input id="nif" name="NIF">
-        </div>
-
-        <div class="field">
-          <label for="naturalidade">Naturalidade (País)</label>
-          <input id="naturalidade" name="Naturalidade (País)">
-        </div>
-
-        <div class="field">
-          <label for="nacionalidade">Nacionalidade</label>
-          <input id="nacionalidade" name="Nacionalidade">
-        </div>
-
-        <div class="field">
-          <label for="concelho_freguesia">Concelho/Freguesia Nasc.</label>
-          <input id="concelho_freguesia" name="Freguesia">
-        </div>
-      </div>
-    </div>
-
-    <!-- IDENTIDADE -->
-    <div class="card">
-      <h2>Identidade</h2>
-
-      <div class="grid">
-        <div class="field">
-          <label for="bi_cc">CC|Outro</label>
-          <input id="bi_cc" name="BI-CC" required>
-        </div>
-
-        <div class="field">
-          <label for="validade_doc">Data de validade do Documento</label>
-          <input id="validade_doc" name="Data de validade do Documento">
-        </div>
-      </div>
-    </div>
-
-    <!-- MORADA -->
-    <div class="card">
-      <h2>Morada</h2>
-
-      <div class="grid">
-        <div class="field">
-          <label for="rua">Rua</label>
-          <input id="rua" name="Rua">
-        </div>
-
-        <div class="field">
-          <label for="cidade">Cidade</label>
-          <input id="cidade" name="Cidade">
-        </div>
-
-        <div class="field">
-          <label for="concelho">Concelho</label>
-          <input id="concelho" name="Concelho">
-        </div>
-
-        <div class="field">
-          <label for="freguesia">Freguesia</label>
-          <input id="freguesia" name="Freguesia">
-        </div>
-
-        <div class="field">
-          <label for="cod_postal">Código Postal</label>
-          <input id="cod_postal" name="Código Postal">
-        </div>
-      </div>
-    </div>
-
-    <!-- ESCOLARIDADE -->
-    <div class="card">
-      <h2>Escolaridade</h2>
-
-      <div class="grid">
-        <div class="field">
-          <label for="escola_anterior">Escola Anterior</label>
-          <input id="escola_anterior" name="Escola Anterior">
-        </div>
-
-        <div class="field">
-          <label for="ultimo_ano">Último Ano de Frequência</label>
-          <select id="ultimo_ano" name="Último Ano de Frequência" required>
-            <option value="">-- Último Ano de Frequência --</option>
-            <option>6º Ano</option>
-            <option>7º Ano</option>
-            <option>8º Ano</option>
-            <option>9º Ano</option>
-            <option>10º Ano</option>
-            <option>11º Ano</option>
-            <option>12º Ano</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="curso_pretendido">Curso Pretendido</label>
-          <select id="curso_pretendido" name="Curso Pretendido" required>
-            <option value="">-- Curso Pretendido --</option>
-            <option value="Tecnico de Acao Educativa">Técnico de Ação Educativa</option>
-            <option value="Tecnico de Desenho Digital 3D">Técnico de Desenho Digital 3D</option>
-            <option value="Tecnico de Eletronica e Telecomunicacoes">Técnico de Eletrónica e Telecomunicações</option>
-            <option value="Tecnico de Apoio Psicossocial">Técnico de Apoio Psicossocial</option>
-            <option value="Tecnico de Video">Técnico de Vídeo</option>
-            <option value="Tecnico de Design e Comunicacao Grafica">Técnico de Design e Comunicação Gráfica</option>
-            <option value="Tecnico de Multimedia">Técnico de Multimédia</option>
-            <option value="Tecnico de Auxiliar de Saude">Técnico de Auxiliar de Saúde</option>
-            <option value="Tecnico de Gestao Equipamentos Informaticos">Técnico de Gestão de Equipamentos Informáticos</option>
-            <option value="Tecnico Assistente Dentario">Técnico Assistente Dentário</option>
-            <option value="Tecnico Auxiliar de Farmacia">Técnico Auxiliar de Farmácia</option>
-            <option value="Workshop para Novos Alunos">Workshop para Novos Alunos</option>
-            <option value="x Dispositivos moveis e gestao Cloud">x Dispositivos móveis e gestão Cloud</option>
-            <option value="x Informatica - Nocoes Basicas">x Informática - Noções Básicas</option>
-            <option value="x Criacao de Sites Web - UFCD0768">x Criação de Sites Web - UFCD0768</option>
-            <option value="x Processamento de Texto - UFCD0755">x Processamento de Texto - UFCD0755</option>
-            <option value="x Folhas de Calculo - UFCD0778">x Folhas de Cálculo - UFCD0778</option>
-            <option value="x IT Essentials - CISCO">x IT Essentials - CISCO</option>
-            <option value="x Projecto e Instalacao ITED - Actualizacao">x Projeto e Instalação ITED - Atualização</option>
-            <option value="x Instalador de ITED">x Instalador de ITED</option>
-            <option value="Tecnico de Informatica e Sistemas">Técnico de Informática e Sistemas</option>
-            <option value="Tecnico de Audiovisuais">Técnico de Audiovisuais</option>
-            <option value="Tecnico de Eletronica e Comunicacoes">Técnico de Eletrónica e Comunicações</option>
-            <option value="Tecnico de Sistemas de Computacao e Redes">Técnico de Sistemas de Computação e Redes</option>
-            <option value="Tecnico de Desenvolvimento de Software">Técnico de Desenvolvimento de Software</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- ENCARREGADO -->
-    <div class="card">
-      <h2>Afiliação / Dados do Encarregado de Educação</h2>
-
-      <div class="grid">
-        <div class="field">
-          <label for="tel_pai">Telemóvel do Pai</label>
-          <input id="tel_pai" name="Telemóvel do Pai">
-        </div>
-
-        <div class="field">
-          <label for="tel_mae">Telemóvel da Mãe</label>
-          <input id="tel_mae" name="Telemóvel da Mãe">
-        </div>
-
-        <div class="field">
-          <label for="email_pai">Email do Pai</label>
-          <input id="email_pai" name="Email do Pai">
-        </div>
-
-        <div class="field">
-          <label for="email_mae">Email da Mãe</label>
-          <input id="email_mae" name="Email da Mãe">
-        </div>
-
-        <div class="field">
-          <label for="nome_enc">Nome do Encarregado</label>
-          <input id="nome_enc" name="Nome do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="tel_enc">Telemóvel do Encarregado</label>
-          <input id="tel_enc" name="Telemóvel do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="email_enc">Email do Encarregado</label>
-          <input id="email_enc" name="Email do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="telefone_enc">Telefone do Encarregado</label>
-          <input id="telefone_enc" name="Telefone do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="morada_enc">Morada do Encarregado</label>
-          <input id="morada_enc" name="Morada do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="localidade_enc">Localidade do Encarregado</label>
-          <input id="localidade_enc" name="Localidade do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="cp_enc">Código Postal do Encarregado</label>
-          <input id="cp_enc" name="Código Postal do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="hab_enc">Habilitações do Encarregado</label>
-          <input id="hab_enc" name="Habilitações do Encarregado">
-        </div>
-
-        <div class="field">
-          <label for="relacao">Relação do Candidato</label>
-          <select id="relacao" name="Relação do Candidato" required>
-            <option value="">-- Relação do Candidato --</option>
-            <option>Pai</option>
-            <option>Mãe</option>
-            <option>Tio</option>
-            <option>Avô</option>
-            <option>Padrinho</option>
-            <option>Irmão</option>
-            <option>Tutor</option>
-            <option>Outro</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- AUTORIZAÇÃO -->
-    <div class="card">
-      <h2>Autorizações</h2>
-
-      <!-- Garante que aparece sempre Sim/Não no PDF -->
-      <input type="hidden" name="autoriza_dados" value="Não">
-
-      <label class="checkline">
-        <input type="checkbox" name="autoriza_dados" value="Sim">
-        Autorizo o tratamento dos meus dados pessoais
-      </label>
-    </div>
-
-    <!-- BOTÕES -->
-    <div class="actions">
-      <button type="submit">Enviar formulário</button>
-    </div>
-  </form>
-
-  <script src="?asset=script.js"></script>
-</body>
-</html>
-
+require __DIR__ . '/../app/views/form.php';
 

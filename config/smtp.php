@@ -2,7 +2,8 @@
 declare(strict_types=1);
 
 /**
- * Load key/value pairs from .env into process env if not already set.
+ * Minimal .env loader (no external deps).
+ * Loads key/value pairs into process env if not already set.
  */
 function loadDotEnvFile(string $path): void
 {
@@ -38,6 +39,12 @@ function loadDotEnvFile(string $path): void
             $value = substr($value, 1, -1);
         }
 
+        // Do not overwrite real environment variables.
+        $existing = getenv($key);
+        if ($existing !== false && $existing !== null && trim((string)$existing) !== '') {
+            continue;
+        }
+
         putenv($key . '=' . $value);
         $_ENV[$key] = $value;
         $_SERVER[$key] = $value;
@@ -54,21 +61,15 @@ function envValue(string $key, string $default = ''): string
 }
 
 $rootEnv = dirname(__DIR__) . DIRECTORY_SEPARATOR . '.env';
-$publicEnv = __DIR__ . DIRECTORY_SEPARATOR . '.env';
 loadDotEnvFile($rootEnv);
-loadDotEnvFile($publicEnv);
 
 return [
-    // Gmail SMTP defaults. Override in .env for other providers.
     'host' => envValue('SMTP_HOST', 'smtp.gmail.com'),
-    'port' => (int)envValue('SMTP_PORT', '587'),
+    'port' => (int) envValue('SMTP_PORT', '587'),
     'secure' => envValue('SMTP_SECURE', 'tls'),
-
-    // Sender account (must be a real mailbox).
     'username' => envValue('SMTP_USERNAME', ''),
     'password' => envValue('SMTP_PASSWORD', ''),
-
-    // Visible sender. Recipient comes from the form "Email" field.
     'from_email' => envValue('SMTP_FROM_EMAIL', ''),
     'from_name' => envValue('SMTP_FROM_NAME', 'Val do Rio Form'),
 ];
+

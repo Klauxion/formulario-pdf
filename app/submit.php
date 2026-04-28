@@ -5,24 +5,220 @@ use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
 require_once __DIR__ . '/../vendor/autoload.php';
-$smtpConfig = require __DIR__ . '/smtp-config.php';
 
-ini_set('display_errors', '0');
-error_reporting(E_ALL);
+/**
+ * Public API used by the front controller (`public/index.php`).
+ *
+ * @return array{ok:bool,message:string,status?:int,email_sent?:bool,email_error?:?string,pdf_filename?:string,submission_id?:string,client_ip?:string}
+ */
+function submitForm(array $postData): array
+{
+    ini_set('display_errors', '0');
+    error_reporting(E_ALL);
 
+    $smtpConfig = require __DIR__ . '/../config/smtp.php';
 
+    // Remove internal fields
+    unset($postData['csrf_token']);
 
+    $formData = normalizeFormData($postData);
 
+    $validation = validateFormData($formData);
+    if ($validation['ok'] === false) {
+        return $validation;
+    }
+
+    if (!is_array($smtpConfig)
+        || empty($smtpConfig['host'])
+        || empty($smtpConfig['port'])
+        || empty($smtpConfig['username'])
+        || empty($smtpConfig['password'])
+        || empty($smtpConfig['secure'])
+        || empty($smtpConfig['from_email'])
+        || empty($smtpConfig['from_name'])
+    ) {
+        return [
+            'ok' => false,
+            'status' => 500,
+            'message' => 'Configuração SMTP inválida. Defina as variáveis SMTP_* no ficheiro .env.',
+        ];
+    }
+
+    $recipientEmail = firstNonEmptyValue($formData, ['Email', 'email']);
+    $studentFirstName = firstNonEmptyValue($formData, ['Primeiro Nome', 'Primeiro_Nome', 'primeiro_nome']);
+    $studentLastName = firstNonEmptyValue($formData, ['Último Nome', 'Último_Nome', 'Ultimo Nome', 'Ultimo_Nome', 'ultimo_nome', 'Ãšltimo Nome']);
+    $studentName = trim($studentFirstName . ' ' . $studentLastName);
+
+    $baseName = sanitizeFilename($studentName);
+    $pdfFilename = $baseName . '_' . date('Ymd_His') . '.pdf';
+    $clientIp = normalizeClientIp($_SERVER['REMOTE_ADDR'] ?? 'unknown');
+    $submissionId = buildSubmissionId();
+
+    try {
+        $pdfBinary = buildPdfFromFormData($formData);
+        if ($pdfBinary === false) {
+            return [
+                'ok' => false,
+                'status' => 500,
+                'message' => 'Não foi possível gerar o PDF no servidor.',
+            ];
+        }
+
+        $subject = 'Nova inscrição - ' . ($studentName !== '' ? $studentName : 'Sem nome');
+        $message = "Nova inscrição recebida.\n\n";
+        $message .= 'ID: ' . $submissionId . "\n";
+        $message .= 'Nome: ' . ($studentName !== '' ? $studentName : '-') . "\n";
+        $message .= 'Email: ' . $recipientEmail . "\n";
+        $message .= 'Curso Pretendido: ' . (string)($formData['Curso Pretendido'] ?? '-') . "\n";
+        $message .= 'Data/Hora: ' . date('Y-m-d H:i:s') . "\n";
+
+        $emailError = null;
+        $emailSent = sendEmailWithAttachment($smtpConfig, $recipientEmail, $subject, $message, $pdfFilename, $pdfBinary, $emailError);
+        if (!$emailSent) {
+            return [
+                'ok' => false,
+                'status' => 400,
+                'message' => 'Não foi possível enviar o email. Verifique o endereço e tente novamente.',
+                'email_sent' => false,
+                'email_error' => $emailError,
+            ];
+        }
+
+        $storageDir = getStorageDir();
+        if (!is_dir($storageDir) && !mkdir($storageDir, 0777, true) && !is_dir($storageDir)) {
+            return [
+                'ok' => false,
+                'status' => 500,
+                'message' => 'Não foi possível criar a pasta de dados.',
+                'email_sent' => true,
+                'email_error' => $emailError,
+            ];
+        }
+
+        $pdfPath = $storageDir . DIRECTORY_SEPARATOR . $pdfFilename;
+        if (file_put_contents($pdfPath, $pdfBinary, LOCK_EX) === false) {
+            return [
+                'ok' => false,
+                'status' => 500,
+                'message' => 'Email enviado, mas falhou ao guardar o PDF no servidor.',
+                'email_sent' => true,
+                'email_error' => $emailError,
+            ];
+        }
+
+        $entry = [
+            'submission_id' => $submissionId,
+            'timestamp' => date('c'),
+            'ip' => $clientIp,
+            'client_ip' => $clientIp,
+            'data' => $formData,
+            'pdf_file' => $pdfFilename,
+        ];
+
+        $filename = $storageDir . DIRECTORY_SEPARATOR . 'inscricoes.jsonl';
+        $result = file_put_contents($filename, json_encode($entry, JSON_UNESCAPED_UNICODE) . PHP_EOL, FILE_APPEND | LOCK_EX);
+        if ($result === false) {
+            return [
+                'ok' => false,
+                'status' => 500,
+                'message' => 'Email enviado, PDF guardado, mas falhou ao registar a inscrição.',
+                'email_sent' => true,
+                'email_error' => $emailError,
+                'pdf_filename' => $pdfFilename,
+                'submission_id' => $submissionId,
+                'client_ip' => $clientIp,
+            ];
+        }
+
+        return [
+            'ok' => true,
+            'message' => 'Inscrição guardada com sucesso.',
+            'email_sent' => true,
+            'email_error' => $emailError,
+            'pdf_filename' => $pdfFilename,
+            'submission_id' => $submissionId,
+            'client_ip' => $clientIp,
+        ];
+    } catch (\Throwable $e) {
+        return [
+            'ok' => false,
+            'status' => 500,
+            'message' => 'Erro interno ao processar o formulário.',
+        ];
+    }
+}
+
+function normalizeFormData(array $data): array
+{
+    $out = [];
+    foreach ($data as $k => $v) {
+        $key = trim((string)$k);
+        if ($key === '') {
+            continue;
+        }
+        if (is_array($v)) {
+            $v = implode(', ', array_map(static fn($x) => trim((string)$x), $v));
+        }
+        $value = trim((string)$v);
+        // Hard limit to avoid abuse / huge payloads
+        if (strlen($value) > 2000) {
+            $value = substr($value, 0, 2000);
+        }
+        $out[$key] = $value;
+
+        // PHP form parsing may convert spaces in field names to underscores.
+        // Keep a space-variant alias so downstream code can read canonical labels.
+        if (str_contains($key, '_')) {
+            $keyWithSpaces = str_replace('_', ' ', $key);
+            if ($keyWithSpaces !== $key && !array_key_exists($keyWithSpaces, $out)) {
+                $out[$keyWithSpaces] = $value;
+            }
+        }
+    }
+    return $out;
+}
+
+/**
+ * @return array{ok:bool,message:string,status?:int}
+ */
+function validateFormData(array $formData): array
+{
+    $email = firstNonEmptyValue($formData, ['Email', 'email']);
+    if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        return ['ok' => false, 'status' => 400, 'message' => 'Email do candidato inválido.'];
+    }
+
+    $first = firstNonEmptyValue($formData, ['Primeiro Nome', 'Primeiro_Nome', 'primeiro_nome']);
+    $last = firstNonEmptyValue($formData, ['Último Nome', 'Último_Nome', 'Ultimo Nome', 'Ultimo_Nome', 'ultimo_nome', 'Ãšltimo Nome']);
+    if ($first === '' || $last === '') {
+        return ['ok' => false, 'status' => 400, 'message' => 'Nome do candidato inválido.'];
+    }
+
+    $curso = firstNonEmptyValue($formData, ['Curso Pretendido', 'Curso_Pretendido', 'curso_pretendido']);
+    if ($curso === '') {
+        return ['ok' => false, 'status' => 400, 'message' => 'Selecione o curso pretendido.'];
+    }
+
+    return ['ok' => true, 'message' => 'OK'];
+}
+
+function firstNonEmptyValue(array $data, array $keys): string
+{
+    foreach ($keys as $key) {
+        if (!array_key_exists($key, $data)) {
+            continue;
+        }
+        $value = trim((string)$data[$key]);
+        if ($value !== '') {
+            return $value;
+        }
+    }
+    return '';
+}
 
 function toPdfText(string $value): string
 {
     return mb_convert_encoding($value, 'ISO-8859-1', 'UTF-8');
-}
-
-function safeValue(array $formData, string $key): string
-{
-    $value = isset($formData[$key]) ? trim((string)$formData[$key]) : '';
-    return $value !== '' ? $value : '-';
 }
 
 function sanitizeFilename(string $value): string
@@ -41,43 +237,6 @@ function sanitizeFilename(string $value): string
 function buildSubmissionId(): string
 {
     return date('YmdHis') . '-' . bin2hex(random_bytes(4));
-}
-
-function getStorageDir(): string
-{
-    $projectRoot = dirname(__DIR__);
-    $preferredDir = $projectRoot . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'submissions';
-    $legacyDir = __DIR__ . DIRECTORY_SEPARATOR . 'submissions';
-
-    if (!is_dir($preferredDir) && !mkdir($preferredDir, 0777, true) && !is_dir($preferredDir)) {
-        return $preferredDir;
-    }
-
-    // One-time migration from old public directory to private storage directory.
-    if (is_dir($legacyDir)) {
-        $legacyFiles = scandir($legacyDir);
-        if (is_array($legacyFiles)) {
-            foreach ($legacyFiles as $legacyFile) {
-                if ($legacyFile === '.' || $legacyFile === '..') {
-                    continue;
-                }
-                $from = $legacyDir . DIRECTORY_SEPARATOR . $legacyFile;
-                $to = $preferredDir . DIRECTORY_SEPARATOR . $legacyFile;
-                if (is_file($from) && !is_file($to)) {
-                    @rename($from, $to);
-                }
-            }
-        }
-    }
-
-    return $preferredDir;
-}
-
-function jsonError(int $statusCode, string $message, array $extra = []): void
-{
-    http_response_code($statusCode);
-    echo json_encode(array_merge(['ok' => false, 'message' => $message], $extra));
-    exit;
 }
 
 function normalizeClientIp(?string $ip): string
@@ -101,9 +260,15 @@ function normalizeClientIp(?string $ip): string
     return $value;
 }
 
+function getStorageDir(): string
+{
+    $projectRoot = dirname(__DIR__);
+    $preferredDir = $projectRoot . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'submissions';
+    return $preferredDir;
+}
+
 function writeField(\setasign\Fpdi\Fpdi $pdf, float $x, float $y, array $formData, string $key, float $boxWidth = 80): void
 {
-    // Special handling for compound fields
     $val = '';
     if ($key === 'Nome Completo') {
         $first = trim((string)($formData['Primeiro Nome'] ?? ''));
@@ -115,13 +280,12 @@ function writeField(\setasign\Fpdi\Fpdi $pdf, float $x, float $y, array $formDat
         if ($conc !== '' && $freg !== '') {
             $val = $conc . ' / ' . $freg;
         } else {
-            $val = $conc . $freg; // one or both empty
+            $val = $conc . $freg;
         }
     } else {
         $val = isset($formData[$key]) ? trim((string)$formData[$key]) : '';
     }
 
-    // Match the original template field style: light-blue filled bar, no visible border.
     $boxHeight = 5.2;
     $boxYOffset = 0.4;
     $textLeftPadding = 2.0;
@@ -144,12 +308,7 @@ function buildPdfFromFormData(array $formData): string|false
 {
     $pdf = new \setasign\Fpdi\Fpdi();
     $templatePath = trim((string)getenv('PDF_TEMPLATE_PATH'));
-    if ($templatePath === '') {
-        $templatePath = __DIR__ . '/../assets/basePDF_image/MDDPE1406_Ficha_Candidatura_r0_fixed.pdf';
-    }
-    
-    // Fallback for root path just in case
-    if (!is_file($templatePath)) {
+    if ($templatePath === '' || !is_file($templatePath)) {
         $templatePath = __DIR__ . '/../assets/basePDF_image/MDDPE1406_Ficha_Candidatura_r0_fixed.pdf';
     }
 
@@ -170,12 +329,11 @@ function buildPdfFromFormData(array $formData): string|false
     $pdf->SetFont('Arial', '', 9);
     $pdf->SetTextColor(0, 0, 0);
 
-    // Ano letivo (start/end) boxes in header
     writeField($pdf, 140.0, 15.5, $formData, 'Ano Letivo Início', 22);
     writeField($pdf, 172.0, 15.5, $formData, 'Ano Letivo Fim', 22);
     writeField($pdf, 170.0, 24.4, $formData, 'Candidatura n.º', 25);
     writeField($pdf, 118.0, 31.7, $formData, 'Curso Pretendido', 65);
-    
+
     writeField($pdf, 25.0, 71.3, $formData, 'Nome Completo', 167);
     writeField($pdf, 34.0, 79.7, $formData, 'Data de Nascimento', 60);
     writeField($pdf, 122.0, 80.2, $formData, 'Nacionalidade', 70);
@@ -201,14 +359,14 @@ function buildPdfFromFormData(array $formData): string|false
     $tpl2 = $pdf->importPage(2);
     $pdf->AddPage();
     $pdf->useTemplate($tpl2, 0, 0, 210, 297);
-    
+
     $pdf->SetFont('Arial', '', 9);
     $pdf->SetTextColor(0, 0, 0);
 
     writeField($pdf, 33.0, 22.1, $formData, 'Nome do Pai', 157);
     writeField($pdf, 30.0, 31.1, $formData, 'Telemóvel do Pai', 81);
     writeField($pdf, 126.0, 31.1, $formData, 'Email do Pai', 64);
-    
+
     writeField($pdf, 33.0, 49.4, $formData, 'Nome da Mãe', 157);
     writeField($pdf, 30.0, 59.0, $formData, 'Telemóvel da Mãe', 81);
     writeField($pdf, 126.0, 59.0, $formData, 'Email da Mãe', 64);
@@ -223,15 +381,12 @@ function buildPdfFromFormData(array $formData): string|false
     writeField($pdf, 54.0, 150.5, $formData, 'Habilitações do Encarregado', 136);
     writeField($pdf, 54.0, 158.0, $formData, 'Relação do Candidato', 136);
 
-    // Checkbox for data consent
     $autoriza = isset($formData['autoriza_dados']) ? trim((string)$formData['autoriza_dados']) : '';
     if ($autoriza === 'Sim' || $autoriza === '1' || $autoriza === 'true' || $autoriza === 'on' || $autoriza === true) {
-        // Draw checkbox box on the right side
         $pdf->SetDrawColor(0, 0, 0);
         $pdf->SetLineWidth(0.5);
-        $pdf->Rect(188.0, 186.0, 5, 5);  // Box
-        
-        // Draw X inside checkbox
+        $pdf->Rect(188.0, 186.0, 5, 5);
+
         $pdf->SetFont('Arial', 'B', 10);
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetXY(188.0, 185.8);
@@ -271,101 +426,3 @@ function sendEmailWithAttachment(array $config, string $recipientEmail, string $
     }
 }
 
-header('Content-Type: application/json; charset=utf-8');
-
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    jsonError(405, 'Metodo nao permitido.');
-}
-
-$rawInput = file_get_contents('php://input');
-$payload = json_decode($rawInput ?: '', true);
-
-if (!is_array($payload) || empty($payload)) {
-    jsonError(400, 'Payload invalido.');
-}
-
-if (!is_array($smtpConfig)
-    || empty($smtpConfig['host'])
-    || empty($smtpConfig['port'])
-    || empty($smtpConfig['username'])
-    || empty($smtpConfig['password'])
-    || empty($smtpConfig['secure'])
-    || empty($smtpConfig['from_email'])
-    || empty($smtpConfig['from_name'])
-) {
-    jsonError(500, 'SMTP config invalida. Define as variaveis SMTP_* no ficheiro .env');
-}
-
-$formData = isset($payload['form_data']) && is_array($payload['form_data']) ? $payload['form_data'] : $payload;
-
-if (empty($formData)) {
-    jsonError(400, 'Dados do formulario invalidos.');
-}
-
-$recipientEmail = trim((string)($formData['Email'] ?? ''));
-if ($recipientEmail === '' || !filter_var($recipientEmail, FILTER_VALIDATE_EMAIL)) {
-    jsonError(400, 'Email do candidato invalido.');
-}
-
-$studentName = trim((string)($formData['Primeiro Nome'] ?? '') . ' ' . (string)($formData['Último Nome'] ?? ''));
-$baseName = sanitizeFilename($studentName);
-$pdfFilename = $baseName . '_' . date('Ymd_His') . '.pdf';
-$clientIp = normalizeClientIp($_SERVER['REMOTE_ADDR'] ?? 'unknown');
-$submissionId = buildSubmissionId();
-$pdfBinary = buildPdfFromFormData($formData);
-if ($pdfBinary === false) {
-    jsonError(500, 'Nao foi possivel gerar o PDF no servidor.');
-}
-
-$emailSent = false;
-$emailError = null;
-
-$subject = 'Nova inscricao - ' . ($studentName !== '' ? $studentName : 'Sem nome');
-$message = "Nova inscricao recebida.\n\n";
-$message .= 'ID: ' . $submissionId . "\n";
-$message .= 'Nome: ' . ($studentName !== '' ? $studentName : '-') . "\n";
-$message .= 'Email: ' . (string)($formData['Email'] ?? '-') . "\n";
-$message .= 'Curso Pretendido: ' . (string)($formData['Curso Pretendido'] ?? '-') . "\n";
-$message .= 'Data/Hora: ' . date('Y-m-d H:i:s') . "\n";
-
-$emailSent = sendEmailWithAttachment($smtpConfig, $recipientEmail, $subject, $message, $pdfFilename, $pdfBinary, $emailError);
-if (!$emailSent) {
-    jsonError(400, 'Failed to send email. The destination email may be invalid or unreachable.', [
-        'email_error' => $emailError,
-    ]);
-}
-
-$storageDir = getStorageDir();
-if (!is_dir($storageDir) && !mkdir($storageDir, 0777, true) && !is_dir($storageDir)) {
-    jsonError(500, 'Nao foi possivel criar a pasta de dados.');
-}
-
-$pdfPath = $storageDir . DIRECTORY_SEPARATOR . $pdfFilename;
-if (file_put_contents($pdfPath, $pdfBinary, LOCK_EX) === false) {
-    jsonError(500, 'Email enviado, mas falhou ao guardar o PDF no servidor.');
-}
-
-$entry = [
-    'submission_id' => $submissionId,
-    'timestamp' => date('c'),
-    'ip' => $clientIp,
-    'client_ip' => $clientIp,
-    'data' => $formData,
-    'pdf_file' => $pdfFilename,
-];
-
-$filename = $storageDir . DIRECTORY_SEPARATOR . 'inscricoes.jsonl';
-$result = file_put_contents($filename, json_encode($entry, JSON_UNESCAPED_UNICODE) . PHP_EOL, FILE_APPEND | LOCK_EX);
-if ($result === false) {
-    jsonError(500, 'Email enviado, PDF guardado, mas falhou ao registar inscricao.');
-}
-
-echo json_encode([
-    'ok' => true,
-    'message' => 'Inscricao guardada com sucesso.',
-    'email_sent' => $emailSent,
-    'email_error' => $emailError,
-    'pdf_filename' => $pdfFilename,
-    'submission_id' => $submissionId,
-    'client_ip' => $clientIp,
-]);
