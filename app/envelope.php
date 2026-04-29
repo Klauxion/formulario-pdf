@@ -16,7 +16,7 @@ function submitForm(array $postData): array
     ini_set('display_errors', '0');
     error_reporting(E_ALL);
 
-    $smtpConfig = require __DIR__ . '/../config/smtp.php';
+    $smtpConfig = require __DIR__ . '/../config/hermes.php';
 
     // Remove internal fields
     unset($postData['csrf_token']);

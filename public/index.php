@@ -11,8 +11,8 @@ function serveAssetIfRequested(): bool
 
     $asset = trim((string)$_GET['asset']);
     $map = [
-        'style.css' => [__DIR__ . '/../assets/style.css', 'text/css; charset=UTF-8'],
-        'script.js' => [__DIR__ . '/../assets/script.js', 'application/javascript; charset=UTF-8'],
+        'narciso.css' => [__DIR__ . '/../assets/narciso.css', 'text/css; charset=UTF-8'],
+        'heavywork.js' => [__DIR__ . '/../assets/heavywork.js', 'application/javascript; charset=UTF-8'],
         'vr_logo_2026.png' => [__DIR__ . '/../assets/images/vr_logo_2026.png', 'image/png'],
     ];
 
@@ -87,7 +87,7 @@ if ($method === 'POST') {
         redirectTo($_SERVER['PHP_SELF']);
     }
 
-    require_once __DIR__ . '/../app/submit.php';
+    require_once __DIR__ . '/../app/envelope.php';
     $result = submitForm($_POST);
 
     if (wantsJson()) {
@@ -124,5 +124,5 @@ if (isset($_SESSION['flash']) && is_array($_SESSION['flash'])) {
     unset($_SESSION['flash']);
 }
 
-require __DIR__ . '/../app/views/form.php';
+require __DIR__ . '/../app/views/morf.php';
 

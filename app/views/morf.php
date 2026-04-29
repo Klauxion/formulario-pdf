@@ -12,7 +12,7 @@ declare(strict_types=1);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ficha de Inscrição - Val do Rio</title>
-  <link rel="stylesheet" href="?asset=style.css">
+  <link rel="stylesheet" href="?asset=narciso.css">
 </head>
 
 <body>
@@ -332,7 +332,7 @@ declare(strict_types=1);
     ></div>
   <?php endif; ?>
 
-  <script src="?asset=script.js"></script>
+  <script src="?asset=heavywork.js"></script>
 </body>
 </html>
 
