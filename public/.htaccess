@@ -1,0 +1,7 @@
+# Block access to sensitive files
+<FilesMatch "\.(env|log|ini)$">
+    Require all denied
+</FilesMatch>
+
+# Optional: disable directory listing
+Options -Indexes
